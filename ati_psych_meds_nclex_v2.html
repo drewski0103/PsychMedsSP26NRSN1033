@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATI Psychotherapeutic Medications — NCLEX Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#0f1117; --surface:#181c27; --surface2:#1f2436; --surface3:#252b3d;
+  --border:rgba(255,255,255,0.07); --text:#e8eaf0; --muted:#7b82a0; --accent:#5b8dee;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:14px;line-height:1.6;}
+
+/* ══ HEADER ══ */
+.page-header{background:linear-gradient(135deg,#0d1520 0%,#131c32 50%,#0f1a2e 100%);border-bottom:1px solid rgba(91,141,238,0.25);padding:32px 32px 24px;position:relative;overflow:hidden;}
+.page-header::before{content:'';position:absolute;top:-80px;right:-80px;width:340px;height:340px;background:radial-gradient(circle,rgba(91,141,238,0.12) 0%,transparent 70%);pointer-events:none;}
+.page-header h1{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:#fff;letter-spacing:-0.02em;line-height:1.1;margin-bottom:5px;}
+.page-header h1 span{color:var(--accent);}
+.page-header p{color:var(--muted);font-size:0.85rem;margin-bottom:18px;}
+.stats{display:flex;gap:14px;flex-wrap:wrap;}
+.stat{background:rgba(91,141,238,0.1);border:1px solid rgba(91,141,238,0.2);border-radius:8px;padding:7px 14px;font-size:0.78rem;color:#a8bfef;}
+.stat strong{color:#fff;font-size:1.05rem;display:block;}
+
+/* ══ MODE BAR ══ */
+.mode-bar{background:#13172200;border-bottom:1px solid var(--border);padding:10px 32px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.mode-btn{padding:6px 16px;border-radius:20px;border:1px solid var(--border);background:var(--surface2);color:var(--muted);font-size:0.78rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .18s;display:flex;align-items:center;gap:6px;}
+.mode-btn:hover{border-color:var(--accent);color:var(--accent);}
+.mode-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+.mode-sep{width:1px;height:22px;background:var(--border);margin:0 4px;}
+.progress-chip{margin-left:auto;background:rgba(74,222,128,0.1);border:1px solid rgba(74,222,128,0.25);border-radius:20px;padding:5px 13px;font-size:0.76rem;color:#4ade80;font-weight:600;}
+
+/* ══ CONTROLS ══ */
+.controls{padding:14px 32px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;gap:10px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:100;}
+.search-wrap{position:relative;flex:1;min-width:200px;max-width:360px;}
+.search-wrap svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.4;pointer-events:none;}
+.search-wrap input{width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:0.87rem;padding:8px 11px 8px 34px;outline:none;transition:border-color .2s;}
+.search-wrap input:focus{border-color:rgba(91,141,238,.5);}
+.search-wrap input::placeholder{color:var(--muted);}
+.filter-chips{display:flex;gap:5px;flex-wrap:wrap;}
+.chip{padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:var(--surface2);color:var(--muted);font-size:0.76rem;font-weight:600;cursor:pointer;transition:all .18s;white-space:nowrap;}
+.chip:hover,.chip.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+.chip.bbw-chip.active{background:#dc2626;border-color:#dc2626;}
+.expand-all-btn{padding:5px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--muted);font-size:0.76rem;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .18s;white-space:nowrap;}
+.expand-all-btn:hover{border-color:var(--accent);color:var(--accent);}
+
+/* ══ MAIN ══ */
+.main{padding:20px 32px 60px;}
+
+/* ══ QUICK REFERENCE PANEL ══ */
+.qr-panel{background:var(--surface);border:1px solid var(--border);border-radius:14px;margin-bottom:22px;overflow:hidden;}
+.qr-head{padding:14px 20px;background:linear-gradient(90deg,#1a2840,var(--surface));display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none;}
+.qr-head h3{font-family:'Playfair Display',serif;font-size:1rem;color:#fff;flex:1;}
+.qr-head span{color:var(--muted);font-size:0.8rem;transition:transform .2s;}
+.qr-body{display:none;padding:16px 20px 20px;}
+.qr-body.open{display:block;}
+.qr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;}
+.qr-card{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:12px 14px;}
+.qr-card h4{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:8px;}
+.qr-card .level-row{display:flex;justify-content:space-between;align-items:center;padding:3px 0;border-bottom:1px solid var(--border);font-size:0.83rem;}
+.qr-card .level-row:last-child{border-bottom:none;}
+.level-val{font-family:'DM Mono',monospace;font-weight:500;color:#60a5fa;}
+.level-danger{color:#f87171;}
+.level-warn{color:#fbbf24;}
+.level-ok{color:#4ade80;}
+.mnemonic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin-top:10px;}
+.mnemonic-card{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:14px;}
+.mnemonic-card h4{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px;}
+.mnemonic-card .word{font-size:1.05rem;font-weight:700;color:var(--accent);margin-bottom:4px;font-family:'DM Mono',monospace;}
+.mnemonic-card ul{list-style:none;font-size:0.84rem;color:#c8cfe0;}
+.mnemonic-card ul li{padding:2px 0;display:flex;gap:6px;}
+.mnemonic-card ul li b{color:#fff;min-width:14px;}
+
+/* ══ SECTION ══ */
+.section{margin-bottom:24px;border-radius:14px;overflow:hidden;border:1px solid var(--border);background:var(--surface);}
+.section-head{display:flex;align-items:center;gap:12px;padding:14px 20px;cursor:pointer;user-select:none;}
+.section-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex-shrink:0;background:rgba(255,255,255,0.07);}
+.section-meta{flex:1;}
+.section-meta h2{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:#fff;line-height:1.2;}
+.section-meta p{font-size:0.74rem;color:var(--muted);margin-top:1px;}
+.section-count{font-size:0.7rem;font-weight:700;padding:3px 9px;border-radius:12px;background:rgba(255,255,255,0.07);color:var(--muted);}
+.chevron-icon{color:var(--muted);font-size:0.78rem;transition:transform .25s;flex-shrink:0;}
+.section.closed .chevron-icon{transform:rotate(-90deg);}
+.nclex-callout{margin:0 18px 14px;background:rgba(240,185,11,0.08);border:1px solid rgba(240,185,11,0.2);border-radius:8px;padding:9px 13px;font-size:0.79rem;color:#d4a918;line-height:1.5;}
+.nclex-callout strong{font-weight:700;}
+.section-body{padding-bottom:4px;}
+.section.closed .section-body{display:none;}
+
+/* ══ DRUG CARDS ══ */
+.drug-card{border-top:1px solid var(--border);background:var(--surface);transition:background .15s;}
+.drug-card:hover{background:var(--surface2);}
+.drug-card.studied{opacity:.6;}
+.drug-header{display:flex;align-items:flex-start;gap:12px;padding:13px 20px 8px;cursor:pointer;}
+.drug-color-bar{width:4px;min-height:38px;border-radius:4px;flex-shrink:0;margin-top:4px;align-self:stretch;}
+.drug-id{flex:1;}
+.drug-name{font-size:0.95rem;font-weight:700;color:#fff;line-height:1.3;}
+.drug-generic{font-size:0.76rem;color:var(--muted);font-style:italic;font-family:'DM Mono',monospace;margin-top:1px;}
+.drug-class-badge{display:inline-block;font-size:0.68rem;font-weight:600;padding:2px 7px;border-radius:4px;margin-top:3px;background:rgba(255,255,255,0.06);color:var(--muted);border:1px solid var(--border);}
+.drug-actions{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+.studied-btn{padding:3px 9px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:0.7rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .18s;white-space:nowrap;}
+.studied-btn:hover,.drug-card.studied .studied-btn{background:rgba(74,222,128,0.15);border-color:rgba(74,222,128,0.4);color:#4ade80;}
+.expand-btn{display:flex;align-items:center;gap:4px;font-size:0.74rem;color:var(--muted);padding:3px 0;cursor:pointer;border:none;background:none;font-family:'DM Sans',sans-serif;transition:color .15s;}
+.expand-btn:hover{color:var(--accent);}
+.expand-arrow{transition:transform .2s;}
+.drug-card.expanded .expand-arrow{transform:rotate(180deg);}
+.drug-tags{display:flex;flex-wrap:wrap;gap:4px;padding:0 20px 6px 36px;}
+.tag{font-size:.66rem;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:.04em;text-transform:uppercase;}
+.tag-red{background:rgba(220,50,50,.15);color:#f87171;border:1px solid rgba(220,50,50,.25);}
+.tag-yellow{background:rgba(234,179,8,.15);color:#fbbf24;border:1px solid rgba(234,179,8,.25);}
+.tag-blue{background:rgba(59,130,246,.15);color:#60a5fa;border:1px solid rgba(59,130,246,.25);}
+.tag-green{background:rgba(34,197,94,.15);color:#4ade80;border:1px solid rgba(34,197,94,.25);}
+.tag-purple{background:rgba(168,85,247,.15);color:#c084fc;border:1px solid rgba(168,85,247,.25);}
+
+/* ══ DETAIL ══ */
+.drug-detail{padding:0 20px 16px 36px;display:none;}
+.drug-detail.open{display:block;}
+.detail-tabs{display:flex;gap:4px;margin-bottom:12px;border-bottom:1px solid var(--border);padding-bottom:0;}
+.detail-tab{padding:7px 14px;font-size:0.77rem;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;background:none;border-top:none;border-left:none;border-right:none;font-family:'DM Sans',sans-serif;}
+.detail-tab:hover{color:var(--text);}
+.detail-tab.active{color:var(--accent);border-bottom-color:var(--accent);}
+.tab-pane{display:none;}
+.tab-pane.active{display:block;}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px;}
+.detail-box{background:var(--surface3);border:1px solid var(--border);border-radius:10px;padding:11px 13px;}
+.detail-box.full{grid-column:1/-1;}
+.detail-box h4{font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:7px;display:flex;align-items:center;gap:5px;}
+.detail-box h4 .dot{width:6px;height:6px;border-radius:50%;display:inline-block;flex-shrink:0;}
+.item-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+.item-list li{font-size:0.83rem;color:#c8cfe0;display:flex;gap:7px;line-height:1.45;}
+.item-list li::before{content:'›';font-weight:700;flex-shrink:0;font-size:.95rem;line-height:1.45;}
+.teach-list li::before{color:var(--accent);}
+.nurse-list li::before{color:#4ade80;}
+.rx-list li::before{color:#fbbf24;}
+.mon-list li::before{color:#c084fc;}
+.contra-list li::before{color:#f87171;}
+.bbw{display:flex;gap:8px;background:rgba(220,38,38,.12);border:1px solid rgba(220,38,38,.3);border-radius:6px;padding:8px 11px;font-size:0.79rem;color:#fca5a5;margin-bottom:10px;line-height:1.5;}
+.bbw::before{content:'⚠';flex-shrink:0;font-size:.9rem;}
+
+/* ══ QUIZ MODE ══ */
+.quiz-overlay{display:none;position:fixed;inset:0;background:#0a0d14;z-index:200;overflow-y:auto;}
+.quiz-overlay.active{display:block;}
+.quiz-inner{max-width:700px;margin:0 auto;padding:40px 24px 80px;}
+.quiz-header{display:flex;align-items:center;gap:14px;margin-bottom:32px;}
+.quiz-header h2{font-family:'Playfair Display',serif;font-size:1.5rem;color:#fff;flex:1;}
+.quiz-close{padding:8px 18px;border-radius:8px;background:var(--surface2);border:1px solid var(--border);color:var(--muted);cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.85rem;}
+.quiz-progress-bar{height:4px;background:var(--surface2);border-radius:4px;margin-bottom:28px;overflow:hidden;}
+.quiz-progress-fill{height:100%;background:var(--accent);border-radius:4px;transition:width .4s;}
+.quiz-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;}
+.quiz-card .q-num{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px;}
+.quiz-card .q-cat{font-size:0.73rem;background:rgba(91,141,238,.15);border:1px solid rgba(91,141,238,.25);color:#60a5fa;padding:3px 9px;border-radius:12px;display:inline-block;margin-bottom:16px;}
+.quiz-card .question{font-size:1.05rem;color:#fff;font-weight:600;line-height:1.5;margin-bottom:20px;}
+.quiz-options{display:flex;flex-direction:column;gap:9px;}
+.quiz-opt{padding:12px 16px;border-radius:10px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:0.9rem;cursor:pointer;font-family:'DM Sans',sans-serif;text-align:left;transition:all .18s;line-height:1.4;}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:rgba(91,141,238,.1);}
+.quiz-opt.correct{background:rgba(34,197,94,.15);border-color:rgba(34,197,94,.4);color:#4ade80;}
+.quiz-opt.wrong{background:rgba(220,50,50,.15);border-color:rgba(220,50,50,.3);color:#f87171;}
+.quiz-opt.reveal-correct{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.25);color:#4ade80;}
+.quiz-opt:disabled{cursor:default;}
+.quiz-explanation{margin-top:16px;background:rgba(255,255,255,.04);border-radius:8px;padding:12px 14px;font-size:0.83rem;color:#c8cfe0;line-height:1.55;border-left:3px solid var(--accent);display:none;}
+.quiz-explanation.show{display:block;}
+.quiz-next{margin-top:18px;padding:11px 24px;border-radius:10px;background:var(--accent);border:none;color:#fff;font-size:.9rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;display:none;}
+.quiz-next.show{display:inline-block;}
+.quiz-score{text-align:center;padding:40px 20px;}
+.quiz-score .score-num{font-family:'Playfair Display',serif;font-size:4rem;color:var(--accent);}
+.quiz-score p{color:var(--muted);font-size:.9rem;margin-top:8px;}
+.quiz-restart{margin-top:24px;padding:12px 28px;border-radius:10px;background:var(--accent);border:none;color:#fff;font-size:.9rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;}
+
+/* ══ PRINT ══ */
+@media print{
+  .mode-bar,.controls,.quiz-overlay,.studied-btn,.expand-btn,.detail-tabs{display:none!important;}
+  body{background:#fff;color:#111;font-size:11px;}
+  .page-header{background:#1a3a5c!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;padding:16px 20px;}
+  .page-header h1{font-size:1.3rem;color:#fff!important;}
+  .page-header p,.stats{display:none;}
+  .section{border:1px solid #ccc;margin-bottom:14px;page-break-inside:avoid;border-radius:4px;}
+  .section-head{background:#eef2fa!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;padding:8px 12px;}
+  .section-meta h2{font-size:.9rem;color:#1a3a5c!important;}
+  .section.closed .section-body{display:block!important;}
+  .nclex-callout{background:#fffbe6!important;border-color:#d4a918!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;color:#7c5204!important;margin:6px 10px 10px;}
+  .drug-card{page-break-inside:avoid;border-top:1px solid #e0e0e0;}
+  .drug-header{padding:8px 12px 4px;}
+  .drug-name{color:#1a3a5c!important;font-size:.85rem;}
+  .drug-generic{color:#555!important;}
+  .drug-class-badge{color:#444!important;background:#eee!important;border-color:#ccc!important;}
+  .drug-detail{display:block!important;padding:4px 12px 10px 20px;}
+  .detail-tabs{display:none!important;}
+  .tab-pane{display:block!important;}
+  .detail-grid{grid-template-columns:1fr 1fr;gap:6px;}
+  .detail-box{background:#f7f9fc!important;border-color:#dde!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;padding:7px 10px;}
+  .detail-box h4{color:#666!important;font-size:.62rem;}
+  .item-list li{color:#222!important;font-size:.75rem;}
+  .item-list li::before{color:#1a3a5c!important;}
+  .bbw{background:#fff0f0!important;border-color:#fca5a5!important;color:#7f1d1d!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .drug-tags{padding-left:16px;}
+  .tag{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:.6rem;}
+  .qr-panel{display:none!important;}
+  .main{padding:10px 16px 20px;}
+}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:680px){
+  .main,.controls,.page-header,.mode-bar{padding-left:14px;padding-right:14px;}
+  .detail-grid{grid-template-columns:1fr;}
+  .detail-box.full{grid-column:1;}
+  .drug-tags{padding-left:18px;}
+  .drug-detail{padding-left:18px;}
+}
+
+/* ══ EMPTY STATE ══ */
+.empty{text-align:center;padding:60px 20px;color:var(--muted);font-size:.9rem;}
+.empty span{font-size:2.5rem;display:block;margin-bottom:10px;}
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>ATI Psychotherapeutic <span>Medications</span></h1>
+  <p>Comprehensive NCLEX Teaching Reference · Student &amp; Faculty Edition · v2.0</p>
+  <div class="stats">
+    <div class="stat"><strong id="totalDrugs">42</strong>Medications</div>
+    <div class="stat"><strong>5</strong>Categories</div>
+    <div class="stat"><strong>15</strong>Drug Classes</div>
+    <div class="stat"><strong id="studiedCount">0</strong>Studied</div>
+  </div>
+</div>
+
+<!-- MODE BAR -->
+<div class="mode-bar">
+  <button class="mode-btn active" id="btnReference" onclick="setMode('reference',this)">📋 Reference Mode</button>
+  <button class="mode-btn" id="btnQuiz" onclick="launchQuiz()">🧠 Quiz Mode</button>
+  <button class="mode-btn" onclick="window.print()">🖨️ Print / Save PDF</button>
+  <div class="mode-sep"></div>
+  <button class="mode-btn" onclick="expandAll()">⊞ Expand All</button>
+  <button class="mode-btn" onclick="collapseAll()">⊟ Collapse All</button>
+  <button class="mode-btn" onclick="resetStudied()" style="margin-left:4px;">↺ Reset Progress</button>
+  <div class="progress-chip" id="progressChip">0 / 42 studied</div>
+</div>
+
+<!-- CONTROLS -->
+<div class="controls">
+  <div class="search-wrap">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" id="searchInput" placeholder="Search drug, brand, class, teaching point…" oninput="applyFilters()">
+  </div>
+  <div class="filter-chips" id="chips">
+    <span class="chip active" onclick="setFilter('all',this)">All</span>
+    <span class="chip" onclick="setFilter('antidepressants',this)">💊 Antidepressants</span>
+    <span class="chip" onclick="setFilter('antipsychotics',this)">🔮 Antipsychotics</span>
+    <span class="chip" onclick="setFilter('mood',this)">⚖️ Mood Stabilizers</span>
+    <span class="chip" onclick="setFilter('anxiolytics',this)">😌 Anxiolytics</span>
+    <span class="chip" onclick="setFilter('adhd',this)">📚 ADHD</span>
+    <span class="chip bbw-chip" onclick="setFilter('bbw',this)">⚠️ Black Box Only</span>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main" id="mainContent">
+
+  <!-- QUICK REFERENCE PANEL -->
+  <div class="qr-panel" id="qrPanel">
+    <div class="qr-head" onclick="toggleQR()">
+      <div style="font-size:1.2rem;">📊</div>
+      <h3>Quick Reference: Therapeutic Levels, Toxicity & Key Mnemonics</h3>
+      <span id="qrChevron">▼</span>
+    </div>
+    <div class="qr-body" id="qrBody">
+      <div class="qr-grid">
+        <div class="qr-card">
+          <h4>🔋 Lithium Levels (mEq/L)</h4>
+          <div class="level-row"><span>Therapeutic (maintenance)</span><span class="level-val level-ok">0.6 – 1.2</span></div>
+          <div class="level-row"><span>Therapeutic (acute mania)</span><span class="level-val level-warn">up to 1.5</span></div>
+          <div class="level-row"><span>Early Toxicity</span><span class="level-val level-warn">1.5 – 2.0</span></div>
+          <div class="level-row"><span>Moderate Toxicity</span><span class="level-val level-danger">2.0 – 2.5</span></div>
+          <div class="level-row"><span>Severe / Life-threatening</span><span class="level-val level-danger">&gt; 2.5</span></div>
+        </div>
+        <div class="qr-card">
+          <h4>💊 Valproate Level (mcg/mL)</h4>
+          <div class="level-row"><span>Therapeutic range</span><span class="level-val level-ok">50 – 125</span></div>
+          <div class="level-row"><span>Toxicity concern</span><span class="level-val level-danger">&gt; 150</span></div>
+          <h4 style="margin-top:10px;">🧩 Carbamazepine (mcg/mL)</h4>
+          <div class="level-row"><span>Therapeutic range</span><span class="level-val level-ok">4 – 12</span></div>
+          <div class="level-row"><span>Toxicity concern</span><span class="level-val level-danger">&gt; 12</span></div>
+        </div>
+        <div class="qr-card">
+          <h4>🧬 Nortriptyline Level (ng/mL)</h4>
+          <div class="level-row"><span>Therapeutic range</span><span class="level-val level-ok">50 – 150</span></div>
+          <div class="level-row"><span>Toxicity concern</span><span class="level-val level-danger">&gt; 500</span></div>
+          <h4 style="margin-top:10px;">🔵 Clozapine ANC (cells/μL)</h4>
+          <div class="level-row"><span>Safe to dispense</span><span class="level-val level-ok">&gt; 1500</span></div>
+          <div class="level-row"><span>Increased monitoring</span><span class="level-val level-warn">1000 – 1499</span></div>
+          <div class="level-row"><span>STOP — agranulocytosis</span><span class="level-val level-danger">&lt; 1000</span></div>
+        </div>
+        <div class="qr-card">
+          <h4>⏳ Drug Onset / Duration</h4>
+          <div class="level-row"><span>SSRIs/SNRIs — first effect</span><span class="level-val">2 – 4 wks</span></div>
+          <div class="level-row"><span>SSRIs/SNRIs — full effect</span><span class="level-val">6 – 8 wks</span></div>
+          <div class="level-row"><span>Buspirone — onset</span><span class="level-val">1 – 2 wks</span></div>
+          <div class="level-row"><span>Buspirone — full effect</span><span class="level-val">4 – 6 wks</span></div>
+          <div class="level-row"><span>Atomoxetine — onset</span><span class="level-val">2 – 4 wks</span></div>
+          <div class="level-row"><span>Lithium — steady state</span><span class="level-val">5 – 7 days</span></div>
+        </div>
+        <div class="qr-card">
+          <h4>⚠️ MAOI Washout Periods</h4>
+          <div class="level-row"><span>MAOI → any serotonergic drug</span><span class="level-val level-warn">14 days</span></div>
+          <div class="level-row"><span>SSRI → MAOI (most)</span><span class="level-val level-warn">14 days</span></div>
+          <div class="level-row"><span>Fluoxetine → MAOI</span><span class="level-val level-danger">5 weeks</span></div>
+          <div class="level-row"><span>MAOI → fluoxetine</span><span class="level-val level-warn">14 days</span></div>
+        </div>
+        <div class="qr-card">
+          <h4>🚨 Emergency Antidotes</h4>
+          <div class="level-row"><span>Benzodiazepine OD</span><span class="level-val level-ok">Flumazenil</span></div>
+          <div class="level-row"><span>Opioid OD</span><span class="level-val level-ok">Naloxone</span></div>
+          <div class="level-row"><span>Acute dystonia (EPS)</span><span class="level-val level-ok">Benztropine / Diphenhydramine</span></div>
+          <div class="level-row"><span>NMS — treatment</span><span class="level-val level-ok">Stop drug; Dantrolene</span></div>
+          <div class="level-row"><span>Lithium toxicity</span><span class="level-val level-ok">Dialysis (severe)</span></div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;margin-bottom:8px;font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);">📝 Key Mnemonics</div>
+      <div class="mnemonic-grid">
+        <div class="mnemonic-card">
+          <h4 style="color:#60a5fa;">TCA Anticholinergic Effects</h4>
+          <div class="word">"Dry, Blind, Mad, Hot, Red"</div>
+          <ul>
+            <li><b>D</b> <span>Dry as a bone (dry mouth, constipation, urinary retention)</span></li>
+            <li><b>B</b> <span>Blind as a bat (blurred vision, mydriasis)</span></li>
+            <li><b>M</b> <span>Mad as a hatter (confusion, delirium)</span></li>
+            <li><b>H</b> <span>Hot as a hare (hyperthermia — no sweating)</span></li>
+            <li><b>R</b> <span>Red as a beet (flushing, vasodilation)</span></li>
+          </ul>
+        </div>
+        <div class="mnemonic-card">
+          <h4 style="color:#f87171;">NMS vs. Serotonin Syndrome</h4>
+          <div class="word">NMS = "Lead Pipe" · SS = "Clonus"</div>
+          <ul>
+            <li><b>NMS</b> <span>Slow onset (24–72h), lead-pipe rigidity, hyperthermia, bradyreflexia, caused by antipsychotics</span></li>
+            <li><b>SS</b> <span>Rapid onset (minutes–hours), clonus/hyperreflexia, tremor, agitation, caused by serotonergic combo</span></li>
+            <li><b>Both</b> <span>Fever + AMS → stop offending drug, supportive care</span></li>
+          </ul>
+        </div>
+        <div class="mnemonic-card">
+          <h4 style="color:#fbbf24;">Lithium Toxicity Signs</h4>
+          <div class="word">"TREMOR → SEIZURE"</div>
+          <ul>
+            <li><b>T</b> <span>Tremor (coarse, worsening)</span></li>
+            <li><b>R</b> <span>Running GI (N/V/D)</span></li>
+            <li><b>E</b> <span>Encephalopathy (confusion)</span></li>
+            <li><b>M</b> <span>Movement incoordination (ataxia)</span></li>
+            <li><b>O</b> <span>Oliguria (kidneys failing)</span></li>
+            <li><b>R</b> <span>Rigidity/seizures at high levels</span></li>
+          </ul>
+        </div>
+        <div class="mnemonic-card">
+          <h4 style="color:#4ade80;">EPS Types — "ADAPT"</h4>
+          <div class="word">ADAPT</div>
+          <ul>
+            <li><b>A</b> <span>Akathisia (restlessness, can't stay still)</span></li>
+            <li><b>D</b> <span>Dystonia (acute muscle spasms)</span></li>
+            <li><b>A</b> <span>Akinesia (reduced movement)</span></li>
+            <li><b>P</b> <span>Pseudoparkinsonism (shuffling, tremor)</span></li>
+            <li><b>T</b> <span>Tardive Dyskinesia (late, potentially irreversible)</span></li>
+          </ul>
+        </div>
+        <div class="mnemonic-card">
+          <h4 style="color:#c084fc;">MAOI Danger Foods — "SMACS"</h4>
+          <div class="word">SMACS</div>
+          <ul>
+            <li><b>S</b> <span>Smoked/cured meats (salami, pepperoni, bacon)</span></li>
+            <li><b>M</b> <span>Mature/aged cheeses (cheddar, brie, blue cheese)</span></li>
+            <li><b>A</b> <span>Alcohol — especially wine and tap beer</span></li>
+            <li><b>C</b> <span>Concentrated yeast extracts (Marmite, Vegemite)</span></li>
+            <li><b>S</b> <span>Soy-based fermented products (miso, soy sauce)</span></li>
+          </ul>
+        </div>
+        <div class="mnemonic-card">
+          <h4 style="color:#f87171;">Serotonin Syndrome — "SHIVERS"</h4>
+          <div class="word">SHIVERS</div>
+          <ul>
+            <li><b>S</b> <span>Shivering / diaphoresis</span></li>
+            <li><b>H</b> <span>Hyperthermia</span></li>
+            <li><b>I</b> <span>Increased reflexes / clonus</span></li>
+            <li><b>V</b> <span>Vital sign instability (HR, BP)</span></li>
+            <li><b>E</b> <span>Encephalopathy / agitation</span></li>
+            <li><b>R</b> <span>Restlessness / tremor</span></li>
+            <li><b>S</b> <span>Stop serotonergic agents immediately</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sectionsContainer"></div>
+</div>
+
+<!-- QUIZ OVERLAY -->
+<div class="quiz-overlay" id="quizOverlay">
+  <div class="quiz-inner">
+    <div class="quiz-header">
+      <h2>🧠 NCLEX Quiz Mode</h2>
+      <button class="quiz-close" onclick="closeQuiz()">✕ Exit Quiz</button>
+    </div>
+    <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizFill" style="width:0%"></div></div>
+    <div id="quizContent"></div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════
+//  DATA
+// ══════════════════════════════════════════════
+const SECTIONS = [
+  {
+    id:"antidepressants", icon:"💊", iconBg:"#1a3a5c",
+    title:"Antidepressants",
+    subtitle:"SSRIs · SNRIs · TCAs · MAOIs · Atypicals",
+    tip:"<strong>NCLEX Priority:</strong> SSRIs = first-line. All carry BBW for suicidal ideation in patients ≤24 yrs. Know serotonin syndrome S/S (SHIVERS). Teach 2–4 week onset — never stop abruptly. MAOIs need tyramine-restricted diet and 14-day washout before/after serotonergic drugs.",
+    drugs:[
+      {
+        name:"Fluoxetine", brand:"Prozac", classLabel:"SSRI", color:"#3a7bd5",
+        tags:[["FIRST-LINE","blue"],["LONGEST HALF-LIFE","green"],["BBW","red"]],
+        bbw:"Increased risk of suicidal thinking/behavior in children, adolescents, and young adults ≤24 years. Monitor closely, especially first 4 weeks and after dose changes.",
+        teaching:[
+          "Therapeutic effect: 2–4 weeks; FULL effect: 6–8 weeks — counsel patient not to stop prematurely",
+          "NEVER stop abruptly — taper slowly to prevent discontinuation syndrome (dizziness, 'brain zaps', flu-like symptoms)",
+          "Longest half-life of all SSRIs (~2–6 days) — provides a natural taper and has LEAST discontinuation syndrome risk",
+          "Avoid MAOIs: 14-day washout after stopping MAOI before starting; wait 5 WEEKS after stopping fluoxetine before starting MAOI",
+          "Common SEs: nausea/GI upset (take with food), insomnia, sexual dysfunction (decreased libido, anorgasmia, delayed ejaculation)",
+          "SEROTONIN SYNDROME: fever, diaphoresis, agitation, tremor, hyperreflexia, clonus — MEDICAL EMERGENCY — stop drug",
+          "Report worsening depression, new anxiety, agitation, or suicidal thoughts — especially in first 4 weeks",
+          "Avoid alcohol — increases CNS depression",
+          "Pregnancy Category C — discuss benefit vs. risk; neonatal adaptation syndrome if used near delivery",
+          "Available as: liquid, capsule, weekly delayed-release tablet (Prozac Weekly)"
+        ],
+        nursing:[
+          "Assess mental status, mood, suicidal ideation at baseline and every visit",
+          "Monitor weight — may cause initial weight loss, long-term weight gain",
+          "Educate family/caregivers on behavior change monitoring — have hotline numbers available",
+          "Assess for concurrent serotonergic medications, supplements (St. John's Wort, tryptophan)",
+          "Document baseline sexual function — leading cause of non-adherence; do not assume; ask directly"
+        ],
+        interactions:[
+          "MAOIs → FATAL serotonin syndrome — CONTRAINDICATED (5-week washout after stopping fluoxetine)",
+          "Linezolid, methylene blue → serotonin syndrome",
+          "Warfarin → increased bleeding risk (inhibits CYP2C9) — monitor INR closely",
+          "TCAs (amitriptyline, nortriptyline) → increases TCA levels via CYP2D6 inhibition → TCA toxicity",
+          "NSAIDs / Aspirin → additive GI bleeding risk",
+          "Triptans → serotonin syndrome risk",
+          "Lithium → serotonin syndrome risk at high levels"
+        ],
+        monitoring:["Suicidal ideation (weekly for first month, then monthly)","Weight and nutritional status","Signs/symptoms of serotonin syndrome","Hepatic function if pre-existing liver disease","Sexual function (adherence risk)"]
+      },
+      {
+        name:"Sertraline", brand:"Zoloft", classLabel:"SSRI", color:"#3a7bd5",
+        tags:[["FIRST-LINE","blue"],["BBW","red"],["CATEGORY C PREGNANCY","yellow"]],
+        bbw:"Increased risk of suicidal thinking and behavior in children, adolescents, and young adults (≤24 years).",
+        teaching:[
+          "Takes 2–4 weeks for noticeable improvement; 6–8 weeks for full therapeutic effect",
+          "Take with food or water — reduces GI side effects",
+          "Never stop abruptly — taper slowly over several weeks; discontinuation syndrome can occur",
+          "Serotonin syndrome: report fever, restlessness, tachycardia, muscle twitching — seek emergency care immediately",
+          "Avoid alcohol — worsens CNS effects and increases depression",
+          "Sexual dysfunction is common (decreased libido, anorgasmia) — discuss options with provider rather than self-stopping",
+          "Common initial side effects (usually resolve in 1–2 weeks): nausea, diarrhea, dry mouth, headache, insomnia",
+          "Liquid concentrate: must be diluted in 4 oz water, ginger ale, or orange juice before use — do NOT mix with other liquids",
+          "One of the safest SSRIs in pregnancy (Category C); discuss risks/benefits"
+        ],
+        nursing:[
+          "Assess suicidal ideation at every visit — particularly in first month and after dose changes",
+          "Monitor for activation syndrome (sudden increase in anxiety, agitation, panic) in first 1–2 weeks",
+          "Document baseline sexual function — most common reason for stopping medication",
+          "Educate caregivers: call provider if behavior worsens suddenly or suicidal statements are made"
+        ],
+        interactions:[
+          "MAOIs → FATAL serotonin syndrome — CONTRAINDICATED (14-day washout)",
+          "Pimozide → CONTRAINDICATED (QT prolongation, increased pimozide levels)",
+          "Disulfiram — liquid concentrate contains alcohol",
+          "NSAIDs, warfarin → increased bleeding risk",
+          "Linezolid, methylene blue → serotonin syndrome"
+        ],
+        monitoring:["Suicidal ideation","Weight","Serum sodium (SIADH risk — especially elderly)","Platelet function/bleeding signs","Mood symptom scales"]
+      },
+      {
+        name:"Escitalopram", brand:"Lexapro", classLabel:"SSRI", color:"#3a7bd5",
+        tags:[["FIRST-LINE","blue"],["BBW","red"],["QT PROLONGATION RISK","red"]],
+        bbw:"Suicidal ideation risk in patients ≤24 years.",
+        teaching:[
+          "Most selective SSRI — fewer drug interactions than paroxetine or fluoxetine",
+          "2–4 week onset; 4–6 weeks for full effect",
+          "Can cause QT prolongation at higher doses (>20 mg) — do not exceed maximum dose; avoid with other QT-prolonging drugs",
+          "Report palpitations, dizziness, or fainting — may indicate cardiac arrhythmia",
+          "Never stop abruptly — taper schedule required",
+          "SIADH may occur — monitor for hyponatremia especially in elderly: confusion, headache, weakness, nausea",
+          "Avoid in patients with known QT syndrome or bradycardia"
+        ],
+        nursing:[
+          "Obtain baseline ECG in patients with cardiac risk factors",
+          "Monitor electrolytes (sodium) in elderly — SIADH and hyponatremia risk",
+          "Assess suicidal ideation throughout therapy",
+          "Verify dose does not exceed 20 mg/day (max — especially in elderly and those with liver disease)"
+        ],
+        interactions:[
+          "MAOIs → FATAL serotonin syndrome — CONTRAINDICATED",
+          "QT-prolonging drugs (antipsychotics, antiarrhythmics) → additive cardiac risk",
+          "Cimetidine → increases escitalopram levels",
+          "Linezolid → serotonin syndrome"
+        ],
+        monitoring:["ECG (QTc) in cardiac risk patients","Serum sodium/electrolytes","Suicidal ideation","Signs of serotonin syndrome"]
+      },
+      {
+        name:"Paroxetine", brand:"Paxil / Paxil CR", classLabel:"SSRI", color:"#3a7bd5",
+        tags:[["HIGHEST DISCONTINUATION RISK","red"],["BBW","red"],["CATEGORY D — PREGNANCY","red"],["MOST ANTICHOLINERGIC SSRI","yellow"]],
+        bbw:"Suicidal ideation in ≤24 years. Category D in pregnancy — associated with neonatal cardiac defects (ventricular septal defects). AVOID in pregnancy.",
+        teaching:[
+          "HIGHEST DISCONTINUATION SYNDROME RISK of all SSRIs — taper VERY slowly, never stop abruptly",
+          "Discontinuation S/S: dizziness, nausea, paresthesias, irritability, vivid dreams, 'electric shock' sensations",
+          "CONTRAINDICATED in pregnancy (Category D) — neonatal cardiac defects reported",
+          "Women of childbearing age MUST use reliable contraception; discuss family planning before starting",
+          "Most anticholinergic SSRI: dry mouth, constipation, urinary retention, blurred vision, tachycardia",
+          "Sedating — useful for insomnia component of depression; take at bedtime",
+          "Significant weight gain with long-term use — counsel patient before initiating",
+          "Avoid alcohol and other CNS depressants"
+        ],
+        nursing:[
+          "ALWAYS assess for pregnancy and contraception intent BEFORE prescribing",
+          "Provide strong contraception counseling with written materials",
+          "Encourage fluids, fiber, regular voiding (anticholinergic effects)",
+          "Monitor urinary output in older males with BPH (urinary retention risk)",
+          "Do not stop without a provider-guided taper plan; educate patient on what to expect"
+        ],
+        interactions:[
+          "MAOIs → FATAL serotonin syndrome — CONTRAINDICATED",
+          "Tamoxifen → reduces tamoxifen efficacy (CYP2D6 inhibitor) — avoid in breast cancer patients on tamoxifen",
+          "Thioridazine → CONTRAINDICATED",
+          "Linezolid → serotonin syndrome",
+          "Warfarin → increased bleeding risk"
+        ],
+        monitoring:["Weight and BMI","Urinary retention (males with BPH)","Suicidal ideation","Anticholinergic symptoms","Pregnancy status"]
+      },
+      {
+        name:"Venlafaxine", brand:"Effexor XR", classLabel:"SNRI", color:"#2e9c7a",
+        tags:[["BLOOD PRESSURE MONITORING","red"],["BBW","red"],["DISCONTINUATION RISK","yellow"]],
+        bbw:"Suicidal ideation in patients ≤24 years.",
+        teaching:[
+          "Monitor BP regularly — dose-dependent hypertension (check BP before initiating and at every dose increase)",
+          "Used for: MDD, GAD, Panic disorder, Social anxiety disorder, fibromyalgia",
+          "Taper slowly on discontinuation — discontinuation syndrome is common and can be severe",
+          "Do NOT crush, chew, or open XR capsules — extended-release mechanism is disrupted",
+          "Take with food to reduce nausea",
+          "Avoid alcohol — increases CNS effects",
+          "Can cause urinary hesitancy/retention — report difficulty voiding",
+          "May increase LDL cholesterol — monitor lipid panel",
+          "Narrow-angle glaucoma risk — report sudden eye pain, visual changes, halos around lights"
+        ],
+        nursing:[
+          "Obtain baseline BP and HR; recheck at every dose change",
+          "Assess renal and hepatic function before initiating — dose adjustment required in impairment",
+          "Assess suicidal ideation",
+          "Monitor for activation syndrome in first 2 weeks (increased anxiety, agitation)"
+        ],
+        interactions:[
+          "MAOIs → FATAL serotonin syndrome — CONTRAINDICATED (14-day washout)",
+          "Linezolid, methylene blue → serotonin syndrome",
+          "Triptans → serotonin syndrome risk",
+          "CYP2D6 inhibitors (fluoxetine, paroxetine) → increase venlafaxine levels"
+        ],
+        monitoring:["Blood pressure at EVERY visit","Heart rate","Suicidal ideation","Lipid panel (LDL)","Renal and hepatic function"]
+      },
+      {
+        name:"Duloxetine", brand:"Cymbalta", classLabel:"SNRI", color:"#2e9c7a",
+        tags:[["HEPATOTOXICITY RISK","red"],["BBW","red"],["MULTI-INDICATION","blue"]],
+        bbw:"Suicidal ideation in patients ≤24 years. Hepatotoxicity risk — AVOID in significant liver disease or chronic heavy alcohol use.",
+        teaching:[
+          "Indications: MDD, GAD, Fibromyalgia, Diabetic peripheral neuropathic pain, Chronic musculoskeletal pain",
+          "AVOID in patients with liver disease or heavy alcohol consumption — hepatotoxicity risk",
+          "Do NOT crush or chew capsules — may sprinkle contents on soft food (applesauce) and swallow immediately",
+          "Signs of hepatotoxicity — REPORT immediately: jaundice, dark urine, right upper abdominal pain, unusual fatigue, anorexia",
+          "Taper slowly — discontinuation syndrome can be severe (dizziness, nausea, sensory disturbances)",
+          "Monitor BP — can cause hypertension",
+          "May worsen urinary hesitancy in men with BPH",
+          "Not recommended in end-stage renal disease"
+        ],
+        nursing:[
+          "Obtain baseline LFTs; monitor periodically — especially in first 6 months",
+          "Document separate pain scores (NRS) alongside mood scores for dual-indication monitoring",
+          "Avoid prescribing in end-stage renal disease (CrCl <30 mL/min) — inadequate data",
+          "Monitor BP at each visit"
+        ],
+        interactions:[
+          "MAOIs → FATAL serotonin syndrome — CONTRAINDICATED",
+          "Heavy alcohol use → dramatically increases hepatotoxicity risk",
+          "Thioridazine, flecainide → toxicity via CYP2D6 inhibition",
+          "NSAIDs, anticoagulants → additive GI bleeding risk",
+          "Linezolid → serotonin syndrome"
+        ],
+        monitoring:["LFTs (baseline, q1–3 months)","Blood pressure","Suicidal ideation","Pain assessment (NRS)","Urinary function (males)"]
+      },
+      {
+        name:"Bupropion", brand:"Wellbutrin SR/XL · Zyban", classLabel:"NDRI (Norepinephrine-Dopamine Reuptake Inhibitor)", color:"#d97706",
+        tags:[["SEIZURE RISK","red"],["BBW","red"],["NO SEXUAL DYSFUNCTION","green"],["SMOKING CESSATION","blue"]],
+        bbw:"Suicidal ideation in ≤24 years. Serious neuropsychiatric events when used for smoking cessation (Zyban): hostility, agitation, depression, suicidal thoughts.",
+        teaching:[
+          "CONTRAINDICATED in: seizure disorder, bulimia nervosa, anorexia nervosa, abrupt alcohol/benzodiazepine withdrawal, MAOI use within 14 days",
+          "LOWERS SEIZURE THRESHOLD — do NOT exceed maximum daily dose; space doses ≥6 hours apart (SR) or use once-daily XL formulation",
+          "ADVANTAGE: does NOT cause sexual dysfunction — preferred in patients where this is a concern",
+          "ADVANTAGE: does NOT cause weight gain — may cause modest weight loss",
+          "Also used as Zyban for smoking cessation (begin 1 week before quit date)",
+          "Avoid alcohol — significantly increases seizure risk",
+          "Do NOT crush, chew, or break SR or XL tablets — entire dose absorbed at once → seizure risk",
+          "Can cause dry mouth, insomnia, agitation — take last dose no later than early afternoon",
+          "Can increase BP — monitor in patients with hypertension"
+        ],
+        nursing:[
+          "Screen ALL patients for history of eating disorders and seizures BEFORE prescribing",
+          "Document last dose timing — insomnia is common if taken too late",
+          "If used for smoking cessation (Zyban): assess mood and neuropsychiatric symptoms closely",
+          "Instruct patient: do not double doses if one is missed; skip missed dose and take next dose on schedule",
+          "Educate patient to avoid OTC medications that lower seizure threshold"
+        ],
+        interactions:[
+          "MAOIs → hypertensive crisis — CONTRAINDICATED (14-day washout)",
+          "Alcohol → dramatically increases seizure threshold lowering",
+          "Levodopa, amantadine → increased bupropion adverse effects",
+          "CYP2B6 inhibitors (ticlopidine, clopidogrel) → increased bupropion levels",
+          "Stimulants → additive cardiovascular and CNS stimulation"
+        ],
+        monitoring:["Seizure history — screen carefully","Blood pressure","Suicidal/neuropsychiatric symptoms (especially Zyban use)","Sleep patterns","Weight"]
+      },
+      {
+        name:"Amitriptyline / Nortriptyline", brand:"Elavil / Pamelor", classLabel:"Tricyclic Antidepressant (TCA)", color:"#7c5cbf",
+        tags:[["ANTICHOLINERGIC","yellow"],["CARDIAC TOXICITY","red"],["LETHAL IN OVERDOSE","red"],["BBW","red"]],
+        bbw:"Suicidal ideation in patients ≤24 years. TCAs are HIGHLY LETHAL in overdose — cardiac arrhythmias, heart block, and seizures. Do NOT prescribe large quantities to patients with suicidal ideation.",
+        teaching:[
+          "ANTICHOLINERGIC effects (mnemonic 'Dry, Blind, Mad, Hot, Red'): dry mouth, urinary retention, constipation, blurred vision, confusion, tachycardia, flushing",
+          "ORTHOSTATIC HYPOTENSION — instruct: change positions slowly, sit at edge of bed for 1–2 min before standing; greatest risk at initiation",
+          "LETHAL IN OVERDOSE — as few as 10–15 tablets can be fatal (cardiac conduction defects, seizures); NEVER give large quantity to suicidal patients",
+          "Highly SEDATING — take at bedtime; do not drive until effects are established",
+          "Take with food to reduce GI irritation",
+          "Avoid alcohol — severe synergistic CNS and cardiac depression",
+          "Avoid hot environments — impairs sweating → hyperthermia",
+          "Also used for: neuropathic pain, migraine prophylaxis, insomnia (low dose)",
+          "AVOID in: BPH, narrow-angle glaucoma, recent MI, cardiac arrhythmias",
+          "Nortriptyline (Pamelor): fewer anticholinergic effects, preferred TCA in elderly"
+        ],
+        nursing:[
+          "Obtain BASELINE ECG — TCAs prolong QRS and QT intervals; contraindicated with bundle branch block",
+          "Monitor vital signs for orthostatic hypotension — take lying/sitting/standing BPs",
+          "NEVER allow suicidal patients unrestricted access to TCA supply — document precautions taken",
+          "Monitor urinary retention and bowel sounds daily (inpatient)",
+          "Strict fall precautions — significant sedation + orthostatic hypotension",
+          "Monitor therapeutic drug levels: nortriptyline 50–150 ng/mL"
+        ],
+        interactions:[
+          "MAOIs → hypertensive crisis AND serotonin syndrome — CONTRAINDICATED (14-day washout)",
+          "Anticholinergic drugs → additive toxicity (urinary retention, ileus, hyperthermia)",
+          "CNS depressants / alcohol → excessive sedation, cardiac depression",
+          "QT-prolonging drugs → additive arrhythmia risk",
+          "Sympathomimetics (pseudoephedrine) → hypertensive crisis",
+          "Cimetidine, SSRIs (fluoxetine/paroxetine) → raise TCA blood levels → toxicity"
+        ],
+        monitoring:["ECG (QRS and QT intervals at baseline and periodically)","Orthostatic blood pressure (lying/sitting/standing)","Drug levels (nortriptyline: 50–150 ng/mL)","Urinary retention","Bowel function","Suicidal ideation"]
+      },
+      {
+        name:"Phenelzine / Tranylcypromine", brand:"Nardil / Parnate", classLabel:"Monoamine Oxidase Inhibitor (MAOI)", color:"#c0392b",
+        tags:[["TYRAMINE DIET REQUIRED","red"],["LETHAL INTERACTIONS","red"],["RESERVED USE ONLY","yellow"]],
+        bbw:null,
+        teaching:[
+          "⚠️ TYRAMINE-RESTRICTED DIET IS MANDATORY — tyramine + MAOI = potentially FATAL hypertensive crisis: severe headache (thunderclap), stiff neck, nausea/vomiting, chest pain, visual changes",
+          "FOODS TO STRICTLY AVOID: aged/fermented cheeses (cheddar, brie, blue), cured/smoked meats (salami, pepperoni, bacon), tap beer/wine (especially Chianti/red wines), soy sauce, miso, fava beans, broad beans, overripe fruit, yeast extracts (Marmite), pickled herring",
+          "WEAR MEDICAL ALERT BRACELET/ID at all times identifying MAOI use",
+          "14-DAY WASHOUT: required before/after ANY serotonergic drug switch; 5-week washout after stopping fluoxetine",
+          "AVOID ALL: OTC cold/flu medications, decongestants (pseudoephedrine, phenylephrine), DXM (dextromethorphan — in cough syrups)",
+          "NEVER take meperidine (Demerol) — potentially FATAL serotonin syndrome",
+          "NEVER take triptans, SSRIs, SNRIs, TCAs, or stimulants concurrently",
+          "Orthostatic hypotension is common — change positions slowly; rise slowly from bed",
+          "Reserved for TREATMENT-RESISTANT depression; benefits must clearly outweigh significant risks",
+          "Report severe sudden headache IMMEDIATELY → emergency room (hypertensive crisis)"
+        ],
+        nursing:[
+          "Provide comprehensive WRITTEN tyramine restriction list at every visit — review it together",
+          "Screen ALL medications, supplements, OTC drugs at EVERY appointment",
+          "Instruct: severe headache = go to ER immediately — do not wait",
+          "Ensure patient carries/wears medical alert identification",
+          "Monitor BP regularly — especially after dietary or medication changes",
+          "Verify all washout periods are observed before ANY medication switches"
+        ],
+        interactions:[
+          "ALL serotonergic drugs → serotonin syndrome — CONTRAINDICATED (14-day washout; 5 weeks for fluoxetine)",
+          "Meperidine (Demerol) → POTENTIALLY FATAL serotonin syndrome",
+          "Sympathomimetics (decongestants, stimulants, cocaine) → hypertensive crisis",
+          "Tyramine-containing foods → hypertensive crisis",
+          "Dextromethorphan (DXM) → serotonin syndrome",
+          "Triptans → serotonin syndrome",
+          "Insulin / oral hypoglycemics → may potentiate hypoglycemia"
+        ],
+        monitoring:["Blood pressure (after any food/medication changes)","Signs of hypertensive crisis","Signs of serotonin syndrome","Suicidal ideation","Dietary and medication compliance at every visit"]
+      },
+      {
+        name:"Mirtazapine", brand:"Remeron / Remeron SolTab", classLabel:"NaSSA (Noradrenergic & Specific Serotonergic Antidepressant)", color:"#d97706",
+        tags:[["SIGNIFICANT WEIGHT GAIN","red"],["SEDATING — CLINICALLY USEFUL","green"],["BBW","red"],["LOW SEXUAL SE","green"]],
+        bbw:"Suicidal ideation in patients ≤24 years.",
+        teaching:[
+          "CAUSES SIGNIFICANT appetite increase and weight gain — clinically useful when patient is underweight or has poor appetite",
+          "Highly sedating — take at bedtime; useful for patients with insomnia component of depression",
+          "Paradox: LOWER doses (7.5–15 mg) are MORE sedating (dominant H1 antihistamine effect); higher doses add noradrenergic activity that partially counteracts sedation",
+          "Lower rates of GI side effects and sexual dysfunction than SSRIs/SNRIs — advantage in patients with these concerns",
+          "Do NOT combine with MAOIs — serotonin syndrome risk",
+          "Do NOT stop abruptly — taper if discontinuing",
+          "Agranulocytosis is rare but possible — report fever, sore throat, or signs of infection",
+          "May lower seizure threshold — caution in seizure-prone patients"
+        ],
+        nursing:[
+          "Monitor weight and BMI at every visit — significant gain expected",
+          "Instruct on fall risk when initiating — strong sedation at start of therapy",
+          "Monitor CBC if patient develops signs of infection (rare agranulocytosis risk)",
+          "Assess sleep patterns — use sedative property therapeutically (bedtime dosing)"
+        ],
+        interactions:[
+          "MAOIs → FATAL serotonin syndrome — CONTRAINDICATED",
+          "Alcohol, benzodiazepines, CNS depressants → additive excessive sedation",
+          "CYP3A4 inducers (carbamazepine, phenytoin, rifampin) → may decrease mirtazapine levels"
+        ],
+        monitoring:["Weight / BMI (every visit)","CBC if signs of infection","Sedation level — fall risk assessment","Suicidal ideation","Sleep quality"]
+      }
+    ]
+  },
+  {
+    id:"antipsychotics", icon:"🔮", iconBg:"#2d1a4f",
+    title:"Antipsychotics",
+    subtitle:"1st Generation (Typical) · 2nd Generation (Atypical)",
+    tip:"<strong>NCLEX Priority:</strong> Know EPS — treat acute dystonia with benztropine/diphenhydramine IM. NMS = EMERGENCY (high fever + lead-pipe rigidity + altered LOC + diaphoresis) → STOP drug. Tardive dyskinesia = potentially irreversible late-onset involuntary movements (use AIMS scale). Clozapine = weekly ANC mandatory + REMS enrollment. ALL atypicals require metabolic syndrome monitoring.",
+    drugs:[
+      {
+        name:"Haloperidol", brand:"Haldol / Haldol Decanoate", classLabel:"1st Generation Antipsychotic — High Potency", color:"#8b4562",
+        tags:[["HIGH EPS RISK","red"],["IM/IV AVAILABLE","blue"],["DEPOT INJECTION AVAILABLE","blue"],["BBW","red"]],
+        bbw:"Elderly patients with dementia-related psychosis treated with antipsychotics are at an increased risk of death. NOT approved for dementia-related psychosis.",
+        teaching:[
+          "HIGH EPS RISK due to powerful D2 receptor blockade — know the four types:",
+          "  • Acute Dystonia (hours–days): sudden painful involuntary muscle spasms (neck — torticollis, jaw — trismus, eyes — oculogyric crisis) → treat with benztropine (Cogentin) or diphenhydramine (Benadryl) IM",
+          "  • Akathisia (days–weeks): subjective motor restlessness, inability to sit still, inner agitation — may look like anxiety; treat with beta-blocker (propranolol) or benzodiazepine",
+          "  • Pseudoparkinsonism (weeks): shuffling gait, pill-rolling tremor, mask-like face, bradykinesia, rigidity",
+          "  • Tardive Dyskinesia (months–years): late-onset, potentially IRREVERSIBLE involuntary movements — lip smacking, tongue protrusion, choreoathetoid limb movements; assess with AIMS scale",
+          "NEUROLEPTIC MALIGNANT SYNDROME (NMS) = MEDICAL EMERGENCY: fever >104°F, severe muscle rigidity ('lead pipe'), altered LOC, diaphoresis, labile BP → STOP haloperidol IMMEDIATELY, provide supportive care, dantrolene may be used",
+          "CONTRAINDICATED in Parkinson's disease — worsens motor symptoms",
+          "Long-acting depot injection (Haldol Decanoate) — given IM monthly for adherence in outpatients; do NOT rub injection site",
+          "Orthostatic hypotension and sedation in first few days — fall precautions",
+          "Can cause QT prolongation — caution with other QT-prolonging drugs"
+        ],
+        nursing:[
+          "Assess EPS at EVERY visit using AIMS (Abnormal Involuntary Movement Scale) — document findings",
+          "Keep benztropine (Cogentin) 1–2 mg IM AND diphenhydramine (Benadryl) 25–50 mg IM available for acute dystonia",
+          "Monitor vital signs — high fever + rigidity → suspect NMS → emergency response",
+          "Check QTc if using IV formulation, high doses, or concurrent QT drugs",
+          "Fall precautions — orthostatic hypotension especially at initiation",
+          "Educate patient and family: do not stop medication without guidance — relapse prevention critical"
+        ],
+        interactions:[
+          "CNS depressants, alcohol → excessive sedation",
+          "QT-prolonging drugs (antiarrhythmics, some antibiotics) → additive QT risk",
+          "Anticholinergic drugs → additive effects; may also MASK early NMS (blunts fever)",
+          "Lithium → rare neurotoxicity",
+          "Antihypertensives → additive hypotension"
+        ],
+        monitoring:["AIMS scale (every 6–12 months minimum)","Vital signs — NMS surveillance","EPS symptoms at every visit","QTc interval","Fall risk assessment","Metabolic parameters (less than atypicals but still relevant)"]
+      },
+      {
+        name:"Chlorpromazine", brand:"Thorazine", classLabel:"1st Generation Antipsychotic — Low Potency", color:"#8b4562",
+        tags:[["PHOTOSENSITIVITY","red"],["ANTICHOLINERGIC","yellow"],["SEDATING","green"],["BBW","red"]],
+        bbw:"Elderly patients with dementia-related psychosis treated with antipsychotics are at an increased risk of death.",
+        teaching:[
+          "PHOTOSENSITIVITY — apply SPF 30+ sunscreen daily, wear protective clothing, avoid prolonged direct sun exposure; can cause severe sunburn and bluish-gray skin pigmentation with long-term use",
+          "Long-term ocular effects: corneal and lens opacities — report any visual changes",
+          "Orthostatic hypotension — change positions slowly; most pronounced at initiation and dose increases",
+          "Anticholinergic effects: dry mouth, constipation, urinary retention, blurred vision, tachycardia",
+          "CHOLESTATIC JAUNDICE (hepatotoxicity) — report yellowing of skin/eyes, dark urine, clay-colored stools",
+          "Low-potency typical → MORE sedation, MORE anticholinergic effects, LESS EPS than high-potency agents",
+          "Agranulocytosis (rare) — report fever, sore throat, mouth ulcers immediately",
+          "Lowers seizure threshold — caution in patients with seizure history",
+          "Other uses: intractable hiccups, nausea/vomiting, pre-operative sedation"
+        ],
+        nursing:[
+          "Advise strict sun protection; document skin teaching at every visit",
+          "Monitor LFTs periodically — cholestatic jaundice risk",
+          "Assess for orthostasis — especially first few weeks",
+          "AIMS assessment every 6–12 months (EPS risk is lower than high-potency but still present)"
+        ],
+        interactions:[
+          "CNS depressants → additive sedation",
+          "Antacids → decrease oral absorption — space 2 hours apart",
+          "Lithium → neurotoxicity risk",
+          "Beta-blockers → additive hypotension",
+          "QT-prolonging drugs → additive risk"
+        ],
+        monitoring:["LFTs","Eye/skin changes (long-term use)","Orthostatic BP","AIMS scale","CBC — agranulocytosis screening"]
+      },
+      {
+        name:"Risperidone", brand:"Risperdal / Risperdal Consta / Perseris", classLabel:"2nd Generation Antipsychotic (Atypical)", color:"#5b6bbf",
+        tags:[["METABOLIC MONITORING","red"],["HYPERPROLACTINEMIA","yellow"],["BBW","red"],["DEPOT AVAILABLE","blue"]],
+        bbw:"Elderly patients with dementia-related psychosis: increased risk of death.",
+        teaching:[
+          "METABOLIC SYNDROME monitoring is MANDATORY: weight gain, new-onset type 2 diabetes, dyslipidemia, hypertension",
+          "Fasting glucose and fasting lipids at baseline, 3 months, then annually",
+          "HYPERPROLACTINEMIA — report: gynecomastia (men), galactorrhea, amenorrhea, irregular menses, sexual dysfunction — due to dopamine receptor blockade in tuberoinfundibular pathway",
+          "Most likely atypical to cause EPS at HIGHER doses — EPS risk increases dose-dependently",
+          "Orthostatic hypotension — especially at initiation and dose increases",
+          "Long-acting injectable forms: Risperdal Consta (IM every 2 weeks) and Perseris (SQ monthly) — improve adherence",
+          "Tardive dyskinesia risk — lower than typicals but possible with long-term use",
+          "QT prolongation at high doses — assess cardiac history"
+        ],
+        nursing:[
+          "Baseline metabolic panel: weight, BMI, waist circumference, fasting glucose, lipid panel, BP",
+          "Repeat metabolic labs at 3 months, 6 months, then annually",
+          "Assess prolactin-related symptoms at every visit — document and report",
+          "AIMS assessment every 6–12 months",
+          "Fall precautions — orthostatic hypotension especially at start"
+        ],
+        interactions:[
+          "CYP2D6 inhibitors (fluoxetine, paroxetine) → increase risperidone levels → toxicity",
+          "CYP3A4 inducers (carbamazepine, rifampin) → decrease risperidone levels → therapeutic failure",
+          "Antihypertensives → additive hypotension",
+          "QT-prolonging drugs → additive cardiac risk"
+        ],
+        monitoring:["Metabolic panel (weight, glucose, lipids, BP, waist circumference)","Prolactin levels if symptomatic","AIMS scale","QTc interval","EPS symptoms — dosing-related"]
+      },
+      {
+        name:"Olanzapine", brand:"Zyprexa / Zyprexa Zydis / Relprevv", classLabel:"2nd Generation Antipsychotic (Atypical)", color:"#5b6bbf",
+        tags:[["HIGHEST WEIGHT GAIN","red"],["METABOLIC RISK","red"],["BBW — RELPREVV PDSS","red"],["BIPOLAR I APPROVED","blue"]],
+        bbw:"Elderly with dementia: increased mortality. Zyprexa Relprevv (long-acting IM): Post-Injection Delirium/Sedation Syndrome (PDSS) — patient MUST be observed for minimum 3 hours post-injection in a healthcare facility.",
+        teaching:[
+          "Causes the GREATEST weight gain of ALL atypical antipsychotics — average 4–15 kg; significant obesity risk",
+          "HIGH risk of new-onset type 2 diabetes mellitus — fasting glucose monitoring is essential",
+          "Mandatory metabolic monitoring: weight, fasting glucose, fasting lipids — schedule at baseline, 3 months, then quarterly",
+          "Highly sedating — take at bedtime; caution when driving or operating machinery",
+          "Used for: schizophrenia, bipolar I disorder (manic and mixed episodes), adjunct for treatment-resistant MDD",
+          "Available as: oral tablet, orally disintegrating tablet (Zydis), short-acting IM (for acute agitation), and long-acting IM (Relprevv)",
+          "Long-acting IM (Relprevv): patient MUST remain in healthcare facility 3 hours post-injection (PDSS — sedation, coma risk)",
+          "Avoid alcohol — significantly increases sedation",
+          "Low EPS risk but not zero — monitor"
+        ],
+        nursing:[
+          "Baseline and frequent metabolic monitoring — weight at EVERY visit, glucose and lipids per schedule",
+          "Provide written documentation of metabolic risks and weight management strategies",
+          "BMI documented at every visit",
+          "For Relprevv long-acting IM: patient CANNOT leave for 3 hours — organize transportation and support accordingly",
+          "AIMS scale every 6–12 months",
+          "Fall precautions: significant sedation + orthostatic hypotension"
+        ],
+        interactions:[
+          "Alcohol, CNS depressants → excessive sedation",
+          "Ciprofloxacin, fluvoxamine (CYP1A2 inhibitors) → increase olanzapine levels",
+          "Carbamazepine, rifampin, SMOKING (CYP1A2 inducers) → decrease olanzapine levels — smokers may need higher doses",
+          "Antihypertensives → additive hypotension"
+        ],
+        monitoring:["Weight/BMI (every visit)","Fasting glucose (baseline, 3 months, then quarterly)","Fasting lipid panel","Blood pressure","EPS/AIMS scale","Sedation level — fall risk"]
+      },
+      {
+        name:"Quetiapine", brand:"Seroquel / Seroquel XR", classLabel:"2nd Generation Antipsychotic (Atypical)", color:"#5b6bbf",
+        tags:[["METABOLIC MONITORING","red"],["SEDATING — CLINICALLY USEFUL","green"],["BBW","red"],["MULTI-INDICATION","blue"]],
+        bbw:"Elderly patients with dementia-related psychosis: increased risk of death.",
+        teaching:[
+          "Approved indications: schizophrenia, bipolar I (acute mania and depression), bipolar II depression, adjunct MDD (XR formulation)",
+          "Sedating — take at bedtime; clinically useful when insomnia accompanies illness",
+          "Mandatory metabolic monitoring: weight, fasting glucose, fasting lipids",
+          "Orthostatic hypotension — rise slowly from bed; significant fall risk especially in elderly",
+          "CATARACTS reported with long-term use — OBTAIN BASELINE EYE EXAM; annual ophthalmology check recommended",
+          "Lowest EPS risk of all antipsychotics — advantage in patients with movement disorder history",
+          "QT prolongation — assess cardiac history; caution with QT-prolonging drugs",
+          "Increased triglycerides are common — monitor lipid panel",
+          "Off-label: used for insomnia, anxiety, PTSD at low doses"
+        ],
+        nursing:[
+          "Arrange ophthalmology evaluation at baseline and annually (cataract risk — document in chart)",
+          "Fall precautions — significant orthostatic hypotension + sedation",
+          "Metabolic monitoring per protocol at every visit",
+          "AIMS scale every 6–12 months"
+        ],
+        interactions:[
+          "CYP3A4 inhibitors (ketoconazole, clarithromycin, grapefruit) → increase quetiapine levels → toxicity",
+          "CYP3A4 inducers (carbamazepine, phenytoin, rifampin) → DRAMATICALLY decrease quetiapine levels",
+          "Antihypertensives → additive hypotension",
+          "CNS depressants, alcohol → additive excessive sedation",
+          "Thyroid hormone → requires monitoring (inhibits thyroid function at high doses)"
+        ],
+        monitoring:["Eye exam (baseline + annually)","Metabolic panel","Orthostatic BP","QTc interval","AIMS scale","Thyroid function (long-term)"]
+      },
+      {
+        name:"Aripiprazole", brand:"Abilify / Abilify Maintena / Aristada", classLabel:"2nd Generation Antipsychotic — Partial Dopamine Agonist", color:"#5b6bbf",
+        tags:[["LOWEST METABOLIC RISK","green"],["PARTIAL AGONIST","blue"],["IMPULSE CONTROL BBW","red"],["MULTI-INDICATION","blue"]],
+        bbw:"Elderly with dementia: increased mortality. Suicidal ideation when used adjunctively for MDD. Compulsive behaviors: pathological gambling, hypersexuality, binge eating, compulsive shopping — reported in some patients.",
+        teaching:[
+          "UNIQUE mechanism: partial D2 dopamine agonist — acts as agonist when dopamine is low (prevents deficiency) and as antagonist when dopamine is excessive (prevents excess)",
+          "Lowest metabolic risk of all atypical antipsychotics — minimal weight gain, minimal glucose/lipid changes",
+          "Less sedating — may actually cause ACTIVATION (insomnia, restlessness, anxiety) in some patients",
+          "AKATHISIA is the most common adverse effect — inner restlessness, compulsion to move, pacing; report to provider (may need dose adjustment or beta-blocker)",
+          "IMPULSE CONTROL DISORDERS — BBW: pathological gambling, compulsive sexual behavior, binge eating, compulsive shopping — STOP medication and report",
+          "Approved for: schizophrenia, bipolar I, adjunct MDD, autism irritability, Tourette's disorder",
+          "Available as: oral tablet, liquid, ODT, short-acting IM, and long-acting monthly IM (Abilify Maintena, Aristada)",
+          "Less orthostatic hypotension than other antipsychotics",
+          "Still requires metabolic monitoring — lower risk is not zero risk"
+        ],
+        nursing:[
+          "Assess for AKATHISIA at every visit — ask specifically: 'Do you feel restless inside? Do you have trouble sitting still?'",
+          "Screen for impulse control disorders at every visit (gambling, sexual behavior, eating, spending)",
+          "Metabolic monitoring required — can be less frequent than other atypicals",
+          "AIMS scale every 6–12 months",
+          "For long-acting IM: ensure oral overlap per specific product protocol; confirm patient safety at home after injection"
+        ],
+        interactions:[
+          "CYP2D6 or CYP3A4 inhibitors (fluoxetine, paroxetine, ketoconazole) → increase aripiprazole levels → REDUCE dose by 50%",
+          "CYP3A4 inducers (carbamazepine, rifampin) → decrease aripiprazole levels → may need to DOUBLE dose",
+          "CNS depressants → additive sedation",
+          "Antihypertensives → additive hypotension"
+        ],
+        monitoring:["Metabolic panel (less frequent)","Akathisia assessment every visit","Impulse control behavior screening","AIMS scale","Suicidal ideation (if MDD adjunct use)"]
+      },
+      {
+        name:"Clozapine", brand:"Clozaril / FazaClo / Versacloz", classLabel:"2nd Generation Antipsychotic — Treatment-Resistant Only", color:"#c0392b",
+        tags:[["WEEKLY ANC MANDATORY","red"],["REMS PROGRAM REQUIRED","red"],["HIGHEST SEIZURE RISK","red"],["MYOCARDITIS RISK","red"],["TREATMENT-RESISTANT ONLY","yellow"]],
+        bbw:"(1) Agranulocytosis — potentially fatal; MANDATORY ANC monitoring via REMS program. (2) Seizures. (3) Myocarditis — potentially fatal (especially first 4–8 weeks). (4) Orthostatic hypotension with bradycardia and syncope. (5) Increased mortality in elderly with dementia-related psychosis.",
+        teaching:[
+          "RESERVED for: (1) schizophrenia failing ≥2 adequate antipsychotic trials, OR (2) recurrent suicidal behavior in schizophrenia/schizoaffective disorder",
+          "REMS PROGRAM: prescriber, pharmacy, AND patient must ALL be enrolled — medication dispensed ONLY after ANC confirmed",
+          "ANC MONITORING SCHEDULE AND THRESHOLDS:",
+          "  • ANC >1500 → safe to dispense",
+          "  • ANC 1000–1499 → increased monitoring frequency required",
+          "  • ANC <1000 → STOP clozapine IMMEDIATELY — notify provider — medical emergency",
+          "NEVER miss lab appointments — medication WILL be withheld without current ANC results",
+          "SEIZURE RISK is HIGHEST of all antipsychotics — risk proportional to dose and speed of titration; report any convulsions",
+          "MYOCARDITIS in first 4–8 weeks: report chest pain, shortness of breath, fatigue, flu-like symptoms → EMERGENCY",
+          "CONSTIPATION can be LIFE-THREATENING (paralytic ileus, fecaloma, bowel perforation) — monitor bowel movements DAILY; prevent with hydration and stool softeners",
+          "SIALORRHEA (drooling) is common — use towels; may treat with glycopyrrolate",
+          "Orthostatic hypotension and severe sedation — especially during titration; fall precautions",
+          "NO significant EPS or tardive dyskinesia — major long-term advantage"
+        ],
+        nursing:[
+          "ENROLL patient in REMS program BEFORE dispensing first dose — verify enrollment",
+          "Draw ANC BEFORE every prescription refill — NEVER dispense without confirmed result on file",
+          "Educate patient CLEARLY: 'If you miss your blood draw, you WILL NOT receive your medication'",
+          "Monitor for myocarditis in first 4–8 weeks — report any cardiac symptoms immediately",
+          "DAILY bowel assessment (inpatient) — severe constipation is a life-threatening complication; bowel regimen is standard",
+          "Manage sialorrhea: position patient, keep towels available, consider anticholinergic agents per order",
+          "Fall precautions: orthostasis + sedation; bed in lowest position, call light within reach",
+          "Metabolic monitoring (weight, glucose, lipids)"
+        ],
+        interactions:[
+          "Fluvoxamine, ciprofloxacin (CYP1A2 inhibitors) → DRAMATICALLY increase clozapine levels → toxicity",
+          "Carbamazepine → decreases clozapine levels AND independently increases agranulocytosis risk — AVOID combination",
+          "Benzodiazepines → rare but documented risk of respiratory arrest — use with extreme caution",
+          "Alcohol, CNS depressants → excessive sedation",
+          "Anticholinergic drugs → additive constipation → LIFE-THREATENING ileus",
+          "SMOKING (CYP1A2 inducer) → decreases clozapine levels — if patient stops smoking, levels rise (toxicity risk)"
+        ],
+        monitoring:["ANC: weekly ×6 months → biweekly ×6 months → monthly if stable","Metabolic panel","ECG and troponin (myocarditis first 4–8 weeks)","Daily bowel function (inpatient)","Seizure activity","BP — orthostatic measurements","Sedation level"]
+      }
+    ]
+  },
+  {
+    id:"mood", icon:"⚖️", iconBg:"#0d2b1a",
+    title:"Mood Stabilizers",
+    subtitle:"Lithium · Valproate · Lamotrigine · Carbamazepine",
+    tip:"<strong>NCLEX Priority:</strong> Lithium = NARROW therapeutic index (0.6–1.2 mEq/L) — know all 3 toxicity levels and signs. Sodium/fluid intake affect levels directly. Valproate = teratogenic (Category X); monitor LFTs and CBC. Lamotrigine = slow titration mandatory; ANY rash → STOP (SJS risk). Carbamazepine = strong CYP inducer; causes OCPs to fail.",
+    drugs:[
+      {
+        name:"Lithium Carbonate", brand:"Eskalith / Lithobid", classLabel:"Alkali Metal — Mood Stabilizer", color:"#2d8a5e",
+        tags:[["NARROW THERAPEUTIC INDEX","red"],["SERUM LEVELS REQUIRED","red"],["TOXICITY RISK","red"],["TERATOGENIC — CAT D","red"]],
+        bbw:null,
+        teaching:[
+          "THERAPEUTIC SERUM LEVEL: 0.6–1.2 mEq/L (maintenance); up to 1.5 mEq/L for acute mania; draw TROUGH level (just before next dose)",
+          "TOXICITY LEVELS AND SIGNS:",
+          "  • 1.5–2.0 mEq/L (Early/Mild): coarse tremor, nausea/vomiting/diarrhea, drowsiness, confusion, muscle weakness, ataxia",
+          "  • 2.0–2.5 mEq/L (Moderate): severe tremor, slurred speech, disorientation, muscle twitching, EEG changes, blurred vision",
+          "  • >2.5 mEq/L (Severe/Life-threatening): seizures, oliguria, circulatory collapse, coma — DIALYSIS may be required",
+          "SODIUM AND FLUID are CRITICAL determinants of lithium levels — low sodium → kidneys retain lithium → toxicity",
+          "Maintain CONSISTENT fluid intake (2–3 L/day) and CONSISTENT sodium intake — do not start low-sodium diet or crash diet",
+          "AVOID: NSAIDs (ibuprofen, naproxen — even OTC) → increase lithium → TOXICITY",
+          "AVOID: Thiazide diuretics → sodium depletion → lithium toxicity",
+          "AVOID: ACE inhibitors, ARBs → decrease lithium excretion → toxicity",
+          "Dehydration risk events: vomiting, diarrhea, heavy sweating, fever — HOLD dose and notify provider; increase fluids",
+          "Take with food or milk to reduce GI irritation",
+          "Fine hand tremor (pill-rolling quality) is COMMON and benign at therapeutic levels — can be treated with propranolol",
+          "Long-term effects: HYPOTHYROIDISM (monitor TSH q6–12 months) and NEPHROTOXICITY (monitor BUN/creatinine)",
+          "PREGNANCY Category D — associated with Ebstein's anomaly (tricuspid valve malformation) in fetus"
+        ],
+        nursing:[
+          "Baseline labs BEFORE starting: serum lithium level, BMP (Na+, K+, BUN, Cr), thyroid function (TSH, T4), CBC, urinalysis, 24-hour urine if possible",
+          "Monitor levels every 5–7 days initially → every 1–3 months when stable",
+          "HOLD lithium and notify provider if: patient has vomiting/diarrhea, is sweating heavily, is NPO/fasting, or shows any toxicity signs",
+          "Educate patient: NEVER alter fluid or salt intake without consulting provider",
+          "Strict appointment schedule for labs — consistent timing relative to last dose (draw trough)",
+          "Monitor I&O — decreased urine output may signal toxicity or renal impairment",
+          "Weigh patient regularly — weight gain common; hypothyroidism also contributes"
+        ],
+        interactions:[
+          "NSAIDs (ibuprofen, naproxen, indomethacin) → increase lithium levels → TOXIC — avoid even OTC NSAIDs",
+          "Thiazide diuretics (HCTZ, chlorthalidone) → sodium depletion → lithium reabsorption → toxicity",
+          "ACE inhibitors, ARBs → reduce renal lithium clearance → toxicity",
+          "Theophylline, caffeine → INCREASE lithium excretion → subtherapeutic levels",
+          "Haloperidol → rare neurotoxicity at high doses",
+          "Antithyroid drugs (methimazole, PTU) → additive hypothyroid risk"
+        ],
+        monitoring:["Serum lithium (trough — draw at 12 hours post-dose)","BMP: Na+, K+, BUN, Cr (baseline and q6 months)","TSH every 6–12 months","Urinalysis/specific gravity","Weight every visit","Any toxicity signs — ask at every visit"]
+      },
+      {
+        name:"Valproate / Valproic Acid", brand:"Depakote / Depakene / Depacon (IV)", classLabel:"Anticonvulsant — Mood Stabilizer", color:"#2d8a5e",
+        tags:[["HEPATOTOXICITY","red"],["TERATOGENIC — CATEGORY X","red"],["THROMBOCYTOPENIA","yellow"],["PANCREATITIS RISK","red"],["BBW","red"]],
+        bbw:"(1) Hepatotoxicity — potentially fatal; highest risk in children <2 years; primarily in first 6 months. (2) Teratogenicity — major congenital malformations including neural tube defects and cognitive impairment in offspring. (3) Pancreatitis — potentially fatal.",
+        teaching:[
+          "THERAPEUTIC LEVEL: 50–125 mcg/mL; draw trough level before next dose",
+          "TERATOGENICITY — MOST dangerous drug in pregnancy among mood stabilizers:",
+          "  • Neural tube defects (spina bifida — 1–2% risk)",
+          "  • Craniofacial defects",
+          "  • Cognitive/developmental impairment in offspring (IQ reduction)",
+          "ALL females of childbearing age MUST use highly effective contraception; provide folic acid supplementation",
+          "HEPATOTOXICITY: jaundice, right upper quadrant pain, dark urine, unusual fatigue, anorexia → STOP and notify provider immediately; HIGHEST risk in children <2 years",
+          "PANCREATITIS: severe abdominal pain radiating to back, nausea, vomiting → STOP medication and seek emergency care",
+          "THROMBOCYTOPENIA: unusual bruising, petechiae, bleeding gums, prolonged bleeding → check platelet count",
+          "Take WITH FOOD to reduce GI upset; do not crush enteric-coated tablets or open sprinkle capsules",
+          "Weight gain and hair loss (usually temporary, telogen effluvium) are common",
+          "Also approved for: seizure disorders and migraine prophylaxis"
+        ],
+        nursing:[
+          "Obtain baseline LFTs, CBC with platelets, and serum valproate level",
+          "Monitor LFTs and CBC with platelets regularly — especially in the first 6 months",
+          "Counsel ALL female patients of childbearing age on teratogenicity BEFORE AND DURING therapy — document counseling",
+          "Assess for signs of pancreatitis at every visit — ask about abdominal pain",
+          "Monitor for bruising and petechiae (thrombocytopenia)"
+        ],
+        interactions:[
+          "Aspirin → displaces valproate from protein binding → increases free valproate → toxicity",
+          "Carbamazepine → complex interaction; reduces valproate levels",
+          "Lamotrigine → valproate inhibits lamotrigine metabolism → DOUBLES lamotrigine levels → SJS risk; must halve lamotrigine dose",
+          "Warfarin → protein displacement → increased bleeding risk",
+          "Carbapenem antibiotics (imipenem, meropenem) → DRAMATICALLY reduce valproate levels → seizure breakthrough",
+          "Phenytoin, phenobarbital → complex bidirectional interactions"
+        ],
+        monitoring:["Serum valproate (trough)","LFTs (baseline, monthly ×6 months, then q3–6 months)","CBC with platelets","Pancreatitis signs (abdominal pain)","Pregnancy status and contraception compliance","Weight"]
+      },
+      {
+        name:"Lamotrigine", brand:"Lamictal / Lamictal XR / Lamictal ODT", classLabel:"Anticonvulsant — Mood Stabilizer", color:"#2d8a5e",
+        tags:[["STEVENS-JOHNSON RISK","red"],["MANDATORY SLOW TITRATION","yellow"],["BIPOLAR DEPRESSION APPROVED","blue"],["BBW","red"]],
+        bbw:"Serious rashes including Stevens-Johnson Syndrome (SJS) and Toxic Epidermal Necrolysis (TEN) — potentially fatal. Risk is highest in children, in patients on valproate, and when the dose is titrated too quickly.",
+        teaching:[
+          "STEVENS-JOHNSON SYNDROME (SJS) — CRITICAL SAFETY TEACHING:",
+          "  • Report ANY rash immediately to provider and STOP the medication — do not wait for next appointment",
+          "  • SJS warning signs: widespread blistering/peeling rash, skin that looks burned, involvement of mouth, eyes, or genitals, fever",
+          "  • SJS is a medical emergency — go to ER if rash occurs",
+          "  • NOT all rashes mean SJS — but all must be evaluated before resuming medication",
+          "SLOW TITRATION IS MANDATORY — dose must be increased very gradually over 6–8 weeks to minimize SJS risk; rapid titration is the PRIMARY driver of SJS",
+          "If valproate is ADDED to lamotrigine regimen: valproate doubles lamotrigine levels → HALVE the lamotrigine dose immediately",
+          "Particularly effective for BIPOLAR I DEPRESSION maintenance — one of the few agents with evidence for this specific indication",
+          "Does NOT cause significant weight gain or metabolic syndrome — advantage for long-term use",
+          "May cause dizziness, headache, diplopia (double vision) — usually resolve with time",
+          "Do NOT abruptly discontinue — seizure risk; taper if stopping",
+          "No routine serum level monitoring required (unlike lithium or valproate)"
+        ],
+        nursing:[
+          "Provide WRITTEN instructions with specific rash warning information — review verbally at every visit",
+          "Document and photograph any rash — assess for mucosal involvement (mouth, eyes, genitals) immediately",
+          "Ensure patient has a clear, written titration schedule — provide step-by-step dose increase calendar",
+          "Educate about drug interactions that change dosing requirements (valproate: reduce dose; carbamazepine: may need more)",
+          "Never restart after a rash without full provider re-evaluation and informed consent"
+        ],
+        interactions:[
+          "Valproate → DOUBLES lamotrigine levels — must HALVE lamotrigine dose when adding",
+          "Carbamazepine, phenytoin, phenobarbital (CYP inducers) → reduce lamotrigine levels by ~50%",
+          "Oral contraceptives (estrogen-containing) → may reduce lamotrigine levels by up to 50% — breakthrough mood episodes",
+          "Rifampin → dramatically reduces lamotrigine levels → seizure/mood breakthrough"
+        ],
+        monitoring:["Rash assessment at EVERY visit (ask and visually assess if tolerated)","Titration schedule adherence","Mood stability","Seizure activity","Contraceptive effectiveness monitoring"]
+      },
+      {
+        name:"Carbamazepine", brand:"Tegretol / Tegretol XR / Carbatrol / Equetro", classLabel:"Anticonvulsant — Mood Stabilizer", color:"#2d8a5e",
+        tags:[["CBC & LFT MONITORING","red"],["STRONG CYP450 INDUCER","red"],["TERATOGENIC — CAT D","red"],["APLASTIC ANEMIA RISK","red"],["BBW","red"]],
+        bbw:"(1) Aplastic anemia and agranulocytosis — potentially fatal; baseline and periodic CBC required. (2) Stevens-Johnson Syndrome / TEN — especially in patients of Asian ancestry with HLA-B*1502 allele; genetic testing strongly recommended.",
+        teaching:[
+          "BLOOD DYSCRASIAS — REPORT IMMEDIATELY: fever, sore throat, mouth ulcers, bruising, pallor, unusual bleeding → signs of agranulocytosis or aplastic anemia → EMERGENCY",
+          "GENETIC TESTING RECOMMENDATION: HLA-B*1502 allele testing in patients of Asian ancestry (Chinese, Thai, Filipino, Malaysian, Indian) BEFORE starting — high risk of SJS/TEN",
+          "STRONG CYP450 ENZYME INDUCER — reduces blood levels of MANY medications:",
+          "  • Oral contraceptives → CONTRACEPTIVE FAILURE — use barrier method or IUD additionally",
+          "  • Warfarin → reduced anticoagulation → clotting risk",
+          "  • Many antiepileptic drugs, antidepressants, antifungals, corticosteroids, protease inhibitors",
+          "  • AUTOINDUCTION: induces its own metabolism → serum levels may DECREASE after first 3–4 weeks; dose may need adjustment",
+          "THERAPEUTIC LEVEL: 4–12 mcg/mL; draw trough level before next dose",
+          "TERATOGENIC (Category D): neural tube defects, cardiac defects, facial abnormalities — use with caution in pregnancy; folic acid supplementation recommended",
+          "Take with food to reduce GI irritation; do NOT crush XR tablets",
+          "SIADH and hyponatremia — monitor sodium levels",
+          "Diplopia, blurred vision, or ataxia → signs of toxicity"
+        ],
+        nursing:[
+          "Baseline CBC, LFTs, serum sodium, and carbamazepine level before initiating",
+          "HLA-B*1502 testing in Asian patients — do not start until results obtained",
+          "Monitor CBC and LFTs regularly — blood dyscrasias can occur early or late",
+          "Review ALL current medications for CYP450 drug interactions before initiating",
+          "Counsel women on teratogenicity AND oral contraceptive failure — dual contraception education",
+          "Monitor sodium levels — SIADH can be severe and symptomatic"
+        ],
+        interactions:[
+          "Oral contraceptives → therapeutic failure (CYP3A4 induction) — use alternative/backup contraception",
+          "CYP3A4 inhibitors (erythromycin, verapamil, diltiazem, grapefruit juice) → increase carbamazepine levels → TOXICITY",
+          "MAOIs → CONTRAINDICATED",
+          "Warfarin → reduced anticoagulation effect",
+          "Valproate, lamotrigine → complex bidirectional interactions",
+          "Lithium → neurotoxicity risk",
+          "Clozapine → decreased clozapine levels + independent agranulocytosis risk — AVOID"
+        ],
+        monitoring:["Serum carbamazepine (trough)","CBC with differential (q1–3 months)","LFTs (q1–3 months)","Serum sodium","Medication interaction audit at every visit","Pregnancy status and contraception"]
+      }
+    ]
+  },
+  {
+    id:"anxiolytics", icon:"😌", iconBg:"#2b1a08",
+    title:"Anxiolytics & Sedative-Hypnotics",
+    subtitle:"Benzodiazepines · Buspirone · Non-BZD Hypnotics · Antihistamines",
+    tip:"<strong>NCLEX Priority:</strong> Benzodiazepines — CNS depressants; NEVER combine with opioids (BBW — respiratory depression/death). NEVER stop abruptly (withdrawal seizures). Antidote = FLUMAZENIL (short-acting — re-sedation possible). Buspirone = non-habit-forming, NOT acute/PRN use (1–2 week onset). Zolpidem → complex sleep behaviors (BBW) — STOP immediately.",
+    drugs:[
+      {
+        name:"Lorazepam / Diazepam / Alprazolam / Clonazepam", brand:"Ativan / Valium / Xanax / Klonopin", classLabel:"Benzodiazepine — Schedule IV Controlled Substance", color:"#c47a1e",
+        tags:[["CONTROLLED — SCHEDULE IV","red"],["BBW — OPIOID COMBINATION","red"],["ANTIDOTE: FLUMAZENIL","blue"],["DEPENDENCE RISK","red"],["ABRUPT DC = SEIZURES","red"]],
+        bbw:"Concomitant use of benzodiazepines with opioids may result in profound sedation, respiratory depression, coma, and death. Avoid combination; if necessary, limit doses and duration, and monitor closely.",
+        teaching:[
+          "CNS DEPRESSANT — NEVER combine with opioids, alcohol, or other CNS depressants → respiratory depression, coma, DEATH",
+          "PHYSICAL AND PSYCHOLOGICAL DEPENDENCE develops with regular use — even at prescribed doses over several weeks",
+          "NEVER STOP ABRUPTLY — benzodiazepine withdrawal is LIFE-THREATENING:",
+          "  • Mild: anxiety, tremors, insomnia, diaphoresis, nausea",
+          "  • Severe: hallucinations, psychosis, delirium, SEIZURES (can be fatal)",
+          "  • Timeline: short-acting (alprazolam) withdrawal starts in 24–72 hours; long-acting (diazepam) may not start for 5–7 days",
+          "ANTIDOTE: FLUMAZENIL (Romazicon) — competitive antagonist; onset 1–2 min; CAUTION — short-acting, re-sedation possible; may precipitate seizures in dependent patients",
+          "Elderly — HIGH FALL RISK; on Beers Criteria (generally avoid in older adults); increased sensitivity to CNS effects",
+          "Do NOT drive or operate heavy machinery — significantly impairs psychomotor performance and judgment",
+          "Tolerance develops to sedative/anxiolytic effects — escalating doses needed for same effect",
+          "Short-term use recommended (2–4 weeks); avoid long-term use — assess benefit vs. risk",
+          "Assess for diversion — controlled substance; do not share",
+          "LORAZEPAM (Ativan): short-acting; IM/IV used for acute agitation, status epilepticus; safest in hepatic impairment",
+          "DIAZEPAM (Valium): long half-life (active metabolites up to 200 hrs); used for alcohol withdrawal, muscle relaxation, seizures",
+          "ALPRAZOLAM (Xanax): short half-life; highest abuse potential of the class; severe discontinuation syndrome",
+          "CLONAZEPAM (Klonopin): long half-life; used for panic disorder, seizures; twice-daily dosing"
+        ],
+        nursing:[
+          "Assess respiratory rate and O2 saturation — WITHHOLD and notify provider if RR <12 breaths/min",
+          "Have flumazenil immediately available when administering IV benzodiazepines",
+          "FALL PRECAUTIONS: bed alarm, non-slip footwear, bed in lowest position, call light in reach",
+          "Assess for signs of dependence and misuse at every visit — change in refill behavior, requests for early refills",
+          "NEVER abruptly discontinue in hospitalized patients — coordinate taper with prescriber even if new orders received",
+          "Monitor level of consciousness and orientation — especially post-procedural and elderly",
+          "Verify storage security for outpatients — controlled substance diversion prevention"
+        ],
+        interactions:[
+          "Opioids → profound sedation, respiratory depression, death — BLACK BOX WARNING",
+          "Alcohol → synergistic CNS and respiratory depression — potentially lethal",
+          "Other CNS depressants (muscle relaxants, antihistamines, hypnotics) → additive effects",
+          "CYP3A4 inhibitors (azole antifungals, HIV protease inhibitors) → increase benzodiazepine levels",
+          "Clozapine + benzodiazepines → rare but documented respiratory arrest"
+        ],
+        monitoring:["Respiratory rate and O2 saturation","Level of consciousness","Fall risk assessment at every visit","Dependence/misuse screening (CAGE-AID, AUDIT)","Signs of withdrawal if abruptly discontinued"]
+      },
+      {
+        name:"Buspirone", brand:"Buspar", classLabel:"Azapirone Anxiolytic — Non-Controlled", color:"#1e8fb5",
+        tags:[["NON-HABIT FORMING","green"],["DELAYED ONSET 1–2 WEEKS","yellow"],["PREFERRED FOR ELDERLY","green"],["NO WITHDRAWAL SYNDROME","green"]],
+        bbw:null,
+        teaching:[
+          "NOT a benzodiazepine — fundamentally different mechanism; acts on serotonin (5-HT1A) receptors",
+          "NON-ADDICTIVE — no physical dependence, no withdrawal syndrome, no tolerance development",
+          "DELAYED ONSET: 1–2 weeks to begin working; 4–6 weeks for full anxiolytic effect — NOT for acute or as-needed anxiety",
+          "Cannot replace a benzodiazepine in the acute setting — inform patients transitioning from benzodiazepines that they must taper the benzo separately",
+          "No significant interaction with alcohol (unlike benzodiazepines) — does not increase CNS depression",
+          "No tolerance development — effective for long-term generalized anxiety management",
+          "AVOID grapefruit juice — inhibits CYP3A4, can significantly raise buspirone levels and increase side effects",
+          "Take at consistent times each day — effectiveness depends on steady blood levels; not effective PRN",
+          "Common side effects: dizziness, headache, nausea, nervousness — usually improve after first 2 weeks",
+          "Preferred agent for anxiety in ELDERLY (does not cause sedation, falls, or cognitive impairment)",
+          "Excellent option for patients with substance use disorders (non-addictive, no abuse potential)"
+        ],
+        nursing:[
+          "Set CLEAR expectations at initiation: 'This will take 1–2 weeks to feel — do not stop early thinking it is not working'",
+          "If transitioning FROM benzodiazepine: DO NOT abruptly discontinue the benzo — overlap and taper while adding buspirone",
+          "Assess suicidal ideation (standard for all psychiatric medications)",
+          "Reinforce consistent daily dosing — must be taken regularly; no PRN benefit"
+        ],
+        interactions:[
+          "MAOIs → serotonin syndrome — CONTRAINDICATED; do not combine",
+          "Grapefruit juice (CYP3A4 inhibitor) → significantly increase buspirone levels — avoid",
+          "Erythromycin, diltiazem, verapamil (CYP3A4 inhibitors) → increase buspirone levels",
+          "CYP3A4 inducers (rifampin, carbamazepine) → decrease buspirone levels → reduced efficacy"
+        ],
+        monitoring:["Anxiety symptom scales (GAD-7)","Adherence to consistent daily dosing","Suicidal ideation","Efficacy at 4–6 weeks post-initiation"]
+      },
+      {
+        name:"Zolpidem", brand:"Ambien / Ambien CR / Edluar / Intermezzo", classLabel:"Non-Benzodiazepine Hypnotic (Z-Drug) — Schedule IV", color:"#c47a1e",
+        tags:[["INSOMNIA ONLY","blue"],["BBW — COMPLEX SLEEP BEHAVIORS","red"],["CONTROLLED — SCHEDULE IV","red"],["GENDER-BASED DOSING","yellow"]],
+        bbw:"Complex sleep behaviors including sleepwalking, sleep-driving, engaging in activities while not fully awake — some resulting in serious injuries and death. STOP immediately if these occur. Do NOT re-prescribe to a patient who has experienced a complex sleep behavior.",
+        teaching:[
+          "Indicated for SHORT-TERM treatment of insomnia ONLY — not anxiolytic; not appropriate for other psychiatric indications",
+          "Take IMMEDIATELY before bed in a safe environment — works very quickly (15–30 min); do not take and then do other things",
+          "REQUIRES MINIMUM 7–8 hours dedicated to sleep — if unable to sleep that long, do NOT take zolpidem",
+          "COMPLEX SLEEP BEHAVIORS (BBW) — STOP AND REPORT IMMEDIATELY: sleepwalking, sleep-driving, cooking while asleep, making calls while asleep — patient often has NO memory of these events",
+          "NEVER combine with alcohol — dangerous synergistic CNS and respiratory depression",
+          "Do not exceed prescribed dose — risk of complex behaviors increases with higher doses",
+          "WOMEN require LOWER doses — cleared more slowly; standard doses: women 5 mg; men 5–10 mg",
+          "Controlled substance — assess for abuse potential; do not share medication",
+          "Rebound insomnia may occur on discontinuation — prepare patient: 'Expect 1–2 nights of worse sleep'",
+          "Morning sedation (residual drowsiness) — do not drive until fully alert (especially with CR formulation)",
+          "Short-term use recommended — habituation and tolerance develop"
+        ],
+        nursing:[
+          "Assess sleep hygiene and contributing factors before prescribing — screen for obstructive sleep apnea (contraindicated)",
+          "Counsel patient to remove trip hazards and ensure safe sleep environment (sleepwalking risk)",
+          "Document any reported complex sleep behaviors IMMEDIATELY — STOP medication per BBW",
+          "Screen for alcohol use and other CNS depressants",
+          "Monitor for dependence with extended use",
+          "Assess morning cognitive and psychomotor function — especially in elderly (falls)"
+        ],
+        interactions:[
+          "Alcohol, opioids, CNS depressants → respiratory depression, coma, death",
+          "CYP3A4 inhibitors (ketoconazole, clarithromycin) → increase zolpidem levels → prolonged sedation",
+          "Rifampin (CYP3A4 inducer) → dramatically reduce zolpidem levels → ineffective",
+          "Other sleep aids or sedating medications → additive effects"
+        ],
+        monitoring:["Sleep quality and duration (sleep diary)","Complex sleep behavior screening (ask at every visit)","Morning psychomotor function","Signs of dependence/tolerance","Respiratory function if risk factors"]
+      },
+      {
+        name:"Hydroxyzine", brand:"Vistaril (IM) / Atarax (oral)", classLabel:"Antihistamine Anxiolytic — Non-Controlled", color:"#1e8fb5",
+        tags:[["NON-CONTROLLED","green"],["NON-ADDICTIVE","green"],["WORKS ACUTELY — PRN USE OK","blue"],["IM AVAILABLE","blue"]],
+        bbw:null,
+        teaching:[
+          "ANTIHISTAMINE (H1 blocker) with anxiolytic, antiemetic, and antipruritic properties — NOT a controlled substance",
+          "Non-addictive, no abuse potential — safe for patients with substance use disorders",
+          "CAN be used for ACUTE anxiety (unlike buspirone) — onset within 15–30 minutes; can be used PRN",
+          "SEDATION is common — do not drive or operate machinery until effects are known",
+          "ANTICHOLINERGIC effects: dry mouth, urinary retention, constipation, blurred vision, tachycardia",
+          "Available as: oral tablets, oral syrup, and IM injection (Vistaril) for pre-operative anxiety and acute agitation",
+          "NEVER give IV — tissue necrosis; only oral or IM routes",
+          "Avoid in elderly — Beers Criteria (anticholinergic effects cause confusion, falls, urinary retention)",
+          "Increased sedation with alcohol or other CNS depressants — counsel accordingly",
+          "Pregnancy Category C — avoid in first trimester; use with caution"
+        ],
+        nursing:[
+          "Assess urinary output — anticholinergic effect can cause retention, especially in elderly males with BPH",
+          "Fall precautions — sedation can be significant especially at higher doses",
+          "For IM administration: use Z-track technique in large muscle; NEVER give IV (tissue necrosis risk)",
+          "Monitor for paradoxical excitability in children and elderly",
+          "Document pre-procedure baseline anxiety (0–10 scale) and post-medication response"
+        ],
+        interactions:[
+          "CNS depressants, alcohol → additive and potentially excessive sedation",
+          "Anticholinergic drugs (TCAs, some antipsychotics, antiparkinson drugs) → additive anticholinergic toxicity",
+          "QT-prolonging drugs → some QT prolongation risk at high doses"
+        ],
+        monitoring:["Sedation level (Ramsay or CIWA scale if inpatient)","Urinary retention","Fall risk","Anticholinergic symptom assessment","Efficacy: anxiety level pre and post-administration"]
+      }
+    ]
+  },
+  {
+    id:"adhd", icon:"📚", iconBg:"#241a00",
+    title:"ADHD Medications",
+    subtitle:"CNS Stimulants (Schedule II) · Non-Stimulant Agents",
+    tip:"<strong>NCLEX Priority:</strong> Stimulants are Schedule II — highest controlled substance classification; assess for abuse and diversion. Cardiac assessment MANDATORY before starting any stimulant. Monitor BP, HR, growth (height/weight in children). Atomoxetine has BBW for suicidal ideation in children. Guanfacine/clonidine: do NOT stop abruptly (rebound hypertension).",
+    drugs:[
+      {
+        name:"Methylphenidate", brand:"Ritalin / Concerta / Metadate / Daytrana (patch)", classLabel:"CNS Stimulant — Schedule II", color:"#b5401e",
+        tags:[["CONTROLLED — SCHEDULE II","red"],["CARDIAC ASSESSMENT REQUIRED","red"],["GROWTH MONITORING","red"],["HIGH ABUSE POTENTIAL","red"]],
+        bbw:null,
+        teaching:[
+          "SCHEDULE II CONTROLLED SUBSTANCE — highest restriction level; NO refills by phone/fax; written/electronic prescription required each month; secure storage",
+          "HIGH ABUSE POTENTIAL — do not share medication; assess home storage security",
+          "CARDIAC ASSESSMENT REQUIRED BEFORE STARTING: contraindicated in symptomatic cardiac disease, structural cardiac abnormalities, arrhythmias, hypertension, hyperthyroidism",
+          "Monitor BP and HR regularly — can cause hypertension and tachycardia; check at every appointment",
+          "Monitor HEIGHT and WEIGHT in children — growth suppression possible with chronic use; plot on growth chart",
+          "Take in the MORNING (or per schedule) — taking late in the day causes INSOMNIA",
+          "APPETITE SUPPRESSION — give medication AFTER breakfast; ensure adequate caloric intake; may need high-calorie evening snack",
+          "Can exacerbate anxiety, psychosis, or tics — assess before and during treatment",
+          "Do NOT crush or chew extended-release formulations (Concerta uses OROS osmotic delivery — crushing disrupts entire dose release)",
+          "Drug HOLIDAYS (weekends/summers) may be prescribed for children to allow growth catch-up; discuss with provider",
+          "Rebound effect when medication wears off: irritability, emotional lability, fatigue — expected, brief",
+          "Avoid caffeine — additive cardiovascular effects",
+          "Ritalin IR: peaks 1–2 hrs, lasts 4–5 hrs; Concerta ER: lasts ~12 hrs"
+        ],
+        nursing:[
+          "Obtain baseline HR, BP, height, weight, and complete cardiac history before initiating",
+          "Obtain ECG if personal or family history of cardiac disease or sudden unexplained death",
+          "Plot growth on standardized pediatric growth chart at every visit — document percentile changes",
+          "Screen for substance use in patient AND family members — diversion risk assessment",
+          "Educate parents: do not alter formulations; give with breakfast; review storage requirements",
+          "Monitor mood, anxiety, and psychiatric symptom changes at every visit"
+        ],
+        interactions:[
+          "MAOIs → hypertensive crisis — CONTRAINDICATED (14-day washout)",
+          "Antihypertensives → methylphenidate antagonizes antihypertensive effect",
+          "Warfarin, phenytoin, TCAs → methylphenidate inhibits metabolism → increased drug levels",
+          "Acidifying agents (ascorbic acid, fruit juices) → reduce methylphenidate absorption",
+          "Alkalinizing agents (antacids, sodium bicarbonate) → increase methylphenidate absorption/effect"
+        ],
+        monitoring:["BP and HR at every appointment","Height and weight on growth chart (pediatric)","Sleep quality and duration","Appetite and nutritional status","Mood, anxiety, psychiatric symptoms","Substance abuse/diversion screening"]
+      },
+      {
+        name:"Amphetamine Salts", brand:"Adderall / Adderall XR / Mydayis / Vyvanse (lisdexamfetamine)", classLabel:"CNS Stimulant — Schedule II", color:"#b5401e",
+        tags:[["CONTROLLED — SCHEDULE II","red"],["BBW — ABUSE POTENTIAL","red"],["HIGHEST ABUSE RISK","red"],["CARDIAC ASSESSMENT REQUIRED","red"]],
+        bbw:"High potential for abuse. Administration for prolonged periods may lead to drug dependence. Misuse of amphetamine may cause sudden death and serious cardiovascular adverse events.",
+        teaching:[
+          "SAME monitoring requirements as methylphenidate: HR, BP, height/weight, cardiac history — apply all those teachings",
+          "HIGHEST abuse potential of all ADHD medications — highest misuse for performance enhancement and recreation",
+          "Can trigger or worsen PSYCHOSIS in predisposed individuals — assess and monitor; do not use in patients with active psychotic disorder",
+          "Can worsen PRE-EXISTING ANXIETY — assess anxiety levels at every visit; may need dose adjustment",
+          "Take EARLY in the day — XR lasts 10–12 hours (Adderall XR); Mydayis can last up to 16 hours",
+          "Do NOT stop abruptly — stimulant withdrawal syndrome: profound fatigue, hypersomnia, increased appetite, dysphoric mood ('crash')",
+          "CARDIOVASCULAR RISK: sudden death and serious cardiovascular events reported, predominantly in patients with underlying cardiac abnormalities",
+          "Vyvanse (lisdexamfetamine): prodrug — converted to d-amphetamine in body; lower abuse potential than direct amphetamine salts",
+          "Avoid all other stimulants including caffeine, diet pills, and energy drinks"
+        ],
+        nursing:[
+          "Cardiac assessment is MANDATORY — obtain ECG if cardiac history exists",
+          "Assess for personal or family history of sudden cardiac death — document",
+          "Robust abuse and diversion risk screening at every visit",
+          "Monitor for psychological symptoms: psychosis, paranoia, anxiety, mania",
+          "Growth and vital sign monitoring identical to methylphenidate"
+        ],
+        interactions:[
+          "MAOIs → hypertensive crisis and serotonin syndrome — CONTRAINDICATED (14-day washout)",
+          "SSRIs, SNRIs → serotonin syndrome risk",
+          "Antacids, sodium bicarbonate → increase amphetamine absorption → higher blood levels",
+          "Acidifying agents (ammonium chloride, ascorbic acid) → decrease amphetamine absorption",
+          "Antihypertensives → antagonism of antihypertensive effect",
+          "Lithium → may blunt stimulant effects"
+        ],
+        monitoring:["Same as methylphenidate PLUS:","Psychiatric symptoms (psychosis, mania, anxiety)","Abuse/diversion screening","Cardiac function monitoring"]
+      },
+      {
+        name:"Atomoxetine", brand:"Strattera", classLabel:"Non-Stimulant SNRI — Non-Scheduled", color:"#3a7a44",
+        tags:[["NON-CONTROLLED","green"],["BBW — SUICIDAL IDEATION","red"],["TAKES 2–4 WEEKS","yellow"],["PREFERRED WITH SUBSTANCE ABUSE HISTORY","green"]],
+        bbw:"Suicidal ideation in children and adolescents — monitor closely for worsening behavior, suicidal thoughts, or unusual changes in mood or behavior, particularly in the first few months of therapy and after dose changes.",
+        teaching:[
+          "NOT a stimulant — no euphoria, no abuse potential, no controlled substance restrictions — ideal for patients with active substance use disorders",
+          "DELAYED ONSET: 2–4 weeks before clinical benefit is noticeable; 4–6 weeks for full effect — counsel patient to continue taking despite not noticing immediate results",
+          "BLACK BOX WARNING: monitor closely for suicidal ideation in children/adolescents — same vigilance and monitoring protocol as with antidepressants",
+          "Monitor BP and HR — can cause both increases (tachycardia, hypertension) and decreases (orthostatic hypotension) depending on dose",
+          "LIVER INJURY risk (rare but reported): report jaundice, dark urine, right upper abdominal pain, unexplained fatigue or nausea",
+          "SEXUAL DYSFUNCTION and urinary hesitancy reported in adults — ask directly; may affect adherence",
+          "Can exacerbate pre-existing hypertension or tachycardia — cardiac history essential",
+          "Does NOT cause insomnia (advantage over stimulants) — can be taken in morning or evening",
+          "Do NOT crush or open capsules — contents irritate mucous membranes"
+        ],
+        nursing:[
+          "Assess suicidal ideation at EVERY visit — especially first 4 weeks and after dose changes",
+          "Monitor BP and HR before initiating and at every dose change",
+          "Obtain baseline LFTs — monitor periodically, especially first 6 months",
+          "Monitor height and weight in children — less growth suppression than stimulants but still possible",
+          "Assess for signs of urinary retention at every visit"
+        ],
+        interactions:[
+          "MAOIs → serotonin syndrome — CONTRAINDICATED",
+          "CYP2D6 inhibitors (fluoxetine, paroxetine, bupropion) → significantly increase atomoxetine levels — monitor for increased adverse effects; may need to reduce dose",
+          "Albuterol (salbutamol) → additive cardiovascular effects (tachycardia)",
+          "Antihypertensives → complex effects on blood pressure"
+        ],
+        monitoring:["Suicidal ideation at every visit","BP and HR","LFTs (baseline and periodic)","Height and weight","ADHD symptom control (Vanderbilt, Conners scale)","Urinary function"]
+      },
+      {
+        name:"Guanfacine / Clonidine", brand:"Intuniv (ER guanfacine) / Kapvay (ER clonidine)", classLabel:"Alpha-2 Agonist — Non-Stimulant, Non-Controlled", color:"#3a7a44",
+        tags:[["NON-CONTROLLED","green"],["BP MONITORING REQUIRED","red"],["NO ABRUPT DISCONTINUATION","red"],["SEDATING","yellow"]],
+        bbw:null,
+        teaching:[
+          "ALPHA-2 RECEPTOR AGONISTS — originally antihypertensives; used for ADHD as non-stimulant alternatives",
+          "NOT controlled substances — no abuse potential",
+          "Monitor BLOOD PRESSURE and HEART RATE at every visit — hypotension and bradycardia are significant risks",
+          "Do NOT stop abruptly — REBOUND HYPERTENSION (especially clonidine); taper gradually over 1–2 weeks minimum",
+          "Significant SEDATION — especially at initiation; take at bedtime to reduce daytime impact; warn about driving/activity",
+          "Used as monotherapy OR as adjunct to stimulants — helps with emotional dysregulation, tic disorders, and oppositional behavior",
+          "GUANFACINE (Intuniv): once daily, more selective for prefrontal cortex alpha-2A receptors, less sedating than clonidine",
+          "CLONIDINE (Kapvay): more sedating, also used for sleep initiation, Tourette syndrome, opioid/nicotine withdrawal",
+          "Dry mouth and constipation (anticholinergic-like effects)",
+          "Dizziness on standing — orthostatic hypotension"
+        ],
+        nursing:[
+          "Obtain baseline BP and HR; recheck at every dose change and every appointment",
+          "Fall precautions: orthostatic hypotension + sedation — especially at initiation",
+          "Do NOT discontinue abruptly — coordinate taper plan with provider; educate family on risk",
+          "Assess sleep quality — sedation can be therapeutically used for sleep onset difficulties",
+          "Monitor HR before each dose in inpatient setting — hold if HR <60 in adults or bradycardic per age-norms in children"
+        ],
+        interactions:[
+          "Antihypertensives → additive hypotension — monitor carefully",
+          "CNS depressants, alcohol → additive sedation",
+          "Beta-blockers → bradycardia and severe hypotension",
+          "Valproate → may increase guanfacine levels",
+          "CYP3A4 inhibitors (ketoconazole, grapefruit) → increase guanfacine levels",
+          "CYP3A4 inducers (rifampin, carbamazepine) → decrease guanfacine levels"
+        ],
+        monitoring:["BP and HR at every visit","Orthostatic BP measurements","Sedation level","Growth parameters (height/weight in children)","ADHD symptom control","Rebound hypertension if any doses are missed"]
+      }
+    ]
+  }
+];
+
+// ══════════════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════════════
+let activeFilter = 'all';
+let studiedSet = new Set(JSON.parse(localStorage.getItem('studied_drugs')||'[]'));
+
+function saveStudied(){ try{ localStorage.setItem('studied_drugs', JSON.stringify([...studiedSet])); }catch(e){} }
+
+function updateProgress(){
+  const total = SECTIONS.reduce((a,s)=>a+s.drugs.length,0);
+  const c = studiedSet.size;
+  document.getElementById('studiedCount').textContent = c;
+  document.getElementById('progressChip').textContent = `${c} / ${total} studied`;
+}
+
+// ══════════════════════════════════════════════
+//  RENDER
+// ══════════════════════════════════════════════
+function setFilter(f,btn){
+  activeFilter = f;
+  document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters(){
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  renderSections(q);
+}
+
+function renderSections(q=''){
+  const container = document.getElementById('sectionsContainer');
+  container.innerHTML = '';
+  let anyVisible = false;
+
+  SECTIONS.forEach(section => {
+    if(activeFilter!=='all' && activeFilter!=='bbw' && section.id!==activeFilter) return;
+
+    let drugs = section.drugs;
+    if(activeFilter==='bbw') drugs = drugs.filter(d=>d.bbw && d.bbw.length>0);
+    if(q) drugs = drugs.filter(d=>{
+      const hay = [d.name, d.brand, d.classLabel, ...(d.teaching||[]), ...(d.nursing||[]), ...(d.interactions||[]), ...(d.monitoring||[])].join(' ').toLowerCase();
+      return hay.includes(q);
+    });
+    if(drugs.length===0) return;
+    anyVisible = true;
+
+    const sec = document.createElement('div');
+    sec.className = 'section';
+    sec.id = 'sec-'+section.id;
+    sec.innerHTML = `
+      <div class="section-head" onclick="toggleSection(this.parentElement)" style="background:linear-gradient(90deg,${section.iconBg},var(--surface));">
+        <div class="section-icon">${section.icon}</div>
+        <div class="section-meta">
+          <h2>${section.title}</h2>
+          <p>${section.subtitle}</p>
+        </div>
+        <span class="section-count">${drugs.length} drug${drugs.length!==1?'s':''}</span>
+        <span class="chevron-icon">▼</span>
+      </div>
+      <div class="section-body">
+        <div class="nclex-callout">${section.tip}</div>
+        <div class="drugs-grid">${drugs.map(d=>renderDrugCard(d)).join('')}</div>
+      </div>`;
+    container.appendChild(sec);
+  });
+
+  if(!anyVisible) container.innerHTML = '<div class="empty"><span>🔍</span>No medications match your search.</div>';
+  updateProgress();
+}
+
+function renderDrugCard(d){
+  const tagHTML = d.tags.map(([l,c])=>`<span class="tag tag-${c}">${l}</span>`).join('');
+  const bbwHTML = d.bbw ? `<div class="bbw">${d.bbw}</div>` : '';
+  const teachHTML = (d.teaching||[]).map(t=>`<li>${t}</li>`).join('');
+  const nurseHTML = (d.nursing||[]).map(t=>`<li>${t}</li>`).join('');
+  const rxHTML = (d.interactions||[]).map(t=>`<li>${t}</li>`).join('');
+  const monHTML = (d.monitoring||[]).map(t=>`<li>${t}</li>`).join('');
+  const studied = studiedSet.has(d.name);
+  return `
+  <div class="drug-card${studied?' studied':''}" id="card-${d.name.replace(/\s/g,'_')}">
+    <div class="drug-header" onclick="toggleDrug(this.parentElement)">
+      <div class="drug-color-bar" style="background:${d.color};"></div>
+      <div class="drug-id">
+        <div class="drug-name">${d.name}</div>
+        <div class="drug-generic">${d.brand}</div>
+        <span class="drug-class-badge">${d.classLabel}</span>
+      </div>
+      <div class="drug-actions" onclick="event.stopPropagation()">
+        <button class="studied-btn" onclick="toggleStudied('${d.name}',this)">${studied?'✓ Studied':'Mark Studied'}</button>
+        <button class="expand-btn" onclick="toggleDrug(this.closest('.drug-card'))">
+          <span>Details</span><span class="expand-arrow">▾</span>
+        </button>
+      </div>
+    </div>
+    <div class="drug-tags">${tagHTML}</div>
+    <div class="drug-detail">
+      ${bbwHTML}
+      <div class="detail-tabs">
+        <button class="detail-tab active" onclick="switchTab(this,'teach')">📘 Patient Teaching</button>
+        <button class="detail-tab" onclick="switchTab(this,'nurse')">💚 Nursing Priorities</button>
+        <button class="detail-tab" onclick="switchTab(this,'rx')">⚡ Drug Interactions</button>
+        <button class="detail-tab" onclick="switchTab(this,'mon')">🔬 Monitoring</button>
+      </div>
+      <div class="tab-pane active" data-tab="teach">
+        <div class="detail-box full" style="margin-top:8px;">
+          <h4><span class="dot" style="background:#5b8dee;"></span>Key Patient Teaching Points</h4>
+          <ul class="item-list teach-list">${teachHTML}</ul>
+        </div>
+      </div>
+      <div class="tab-pane" data-tab="nurse">
+        <div class="detail-box full" style="margin-top:8px;">
+          <h4><span class="dot" style="background:#4ade80;"></span>Nursing Priorities &amp; Assessments</h4>
+          <ul class="item-list nurse-list">${nurseHTML}</ul>
+        </div>
+      </div>
+      <div class="tab-pane" data-tab="rx">
+        <div class="detail-box full" style="margin-top:8px;">
+          <h4><span class="dot" style="background:#fbbf24;"></span>Key Drug Interactions</h4>
+          <ul class="item-list rx-list">${rxHTML}</ul>
+        </div>
+      </div>
+      <div class="tab-pane" data-tab="mon">
+        <div class="detail-box full" style="margin-top:8px;">
+          <h4><span class="dot" style="background:#c084fc;"></span>Required Monitoring Parameters</h4>
+          <ul class="item-list mon-list">${monHTML}</ul>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function switchTab(btn, tabName){
+  const card = btn.closest('.drug-card');
+  card.querySelectorAll('.detail-tab').forEach(t=>t.classList.remove('active'));
+  card.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  card.querySelector(`.tab-pane[data-tab="${tabName}"]`).classList.add('active');
+}
+
+function toggleSection(sec){ sec.classList.toggle('closed'); }
+
+function toggleDrug(card){
+  const detail = card.querySelector('.drug-detail');
+  const isOpen = detail.classList.contains('open');
+  detail.classList.toggle('open',!isOpen);
+  card.classList.toggle('expanded',!isOpen);
+}
+
+function expandAll(){
+  document.querySelectorAll('.drug-detail').forEach(d=>d.classList.add('open'));
+  document.querySelectorAll('.drug-card').forEach(c=>c.classList.add('expanded'));
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('closed'));
+}
+function collapseAll(){
+  document.querySelectorAll('.drug-detail').forEach(d=>d.classList.remove('open'));
+  document.querySelectorAll('.drug-card').forEach(c=>c.classList.remove('expanded'));
+}
+
+function toggleStudied(name, btn){
+  const card = btn.closest('.drug-card');
+  if(studiedSet.has(name)){ studiedSet.delete(name); card.classList.remove('studied'); btn.textContent='Mark Studied'; }
+  else { studiedSet.add(name); card.classList.add('studied'); btn.textContent='✓ Studied'; }
+  saveStudied(); updateProgress();
+}
+
+function resetStudied(){
+  if(!confirm('Reset all study progress?')) return;
+  studiedSet.clear(); saveStudied();
+  document.querySelectorAll('.drug-card').forEach(c=>{ c.classList.remove('studied'); const b=c.querySelector('.studied-btn'); if(b) b.textContent='Mark Studied'; });
+  updateProgress();
+}
+
+function setMode(m,btn){ document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); }
+
+function toggleQR(){
+  const body = document.getElementById('qrBody');
+  const chev = document.getElementById('qrChevron');
+  const open = body.classList.toggle('open');
+  chev.style.transform = open ? 'rotate(180deg)' : '';
+}
+
+// ══════════════════════════════════════════════
+//  QUIZ MODE
+// ══════════════════════════════════════════════
+const QUIZ_QUESTIONS = [
+  { cat:"Lithium", q:"What is the therapeutic serum level range for lithium (maintenance)?", opts:["0.3–0.6 mEq/L","0.6–1.2 mEq/L","1.5–2.0 mEq/L","2.0–2.5 mEq/L"], ans:1, exp:"Therapeutic maintenance level is 0.6–1.2 mEq/L. For acute mania, up to 1.5 mEq/L may be acceptable. Levels >1.5 indicate early toxicity." },
+  { cat:"Lithium", q:"A patient on lithium calls to report severe diarrhea, vomiting, and 'shaky hands' after starting a new OTC pain medication. What OTC medication most likely caused this, and what is the concern?", opts:["Acetaminophen — hepatotoxicity","Ibuprofen (NSAID) — lithium toxicity","Diphenhydramine — anticholinergic crisis","Antacids — altered absorption"], ans:1, exp:"NSAIDs inhibit prostaglandin-mediated renal excretion of lithium, causing sodium retention and lithium accumulation. Coarse tremor + GI symptoms in a lithium patient = early toxicity until proven otherwise. Hold lithium and check level." },
+  { cat:"Lithium", q:"What dietary change would most INCREASE the risk of lithium toxicity?", opts:["Increasing protein intake","Starting a low-sodium diet","Drinking extra fluids","Reducing caffeine"], ans:1, exp:"Sodium and lithium are reabsorbed together in the renal tubule. A low-sodium diet causes the kidneys to retain more sodium — and more lithium alongside it — leading to toxic levels." },
+  { cat:"Antipsychotics", q:"A patient taking haloperidol suddenly develops a fixed upward gaze, neck spasms, and is unable to open their jaw. What is happening and what is the priority nursing action?", opts:["Tardive dyskinesia — document and report at next visit","Neuroleptic Malignant Syndrome — stop haloperidol, call rapid response","Acute dystonic reaction — administer benztropine or diphenhydramine IM","Akathisia — administer a beta-blocker"], ans:2, exp:"This is ACUTE DYSTONIA — sudden involuntary muscle spasms caused by dopamine D2 blockade. Priority: administer benztropine (Cogentin) 1–2 mg IM or diphenhydramine 25–50 mg IM for rapid relief. This is not NMS (no fever/rigidity/altered LOC)." },
+  { cat:"Antipsychotics", q:"A patient taking an antipsychotic develops a temperature of 105°F, severe muscle rigidity, altered mental status, and diaphoresis. What is the priority action?", opts:["Administer benztropine IM for EPS","Rehydrate with IV fluids and monitor","Discontinue the antipsychotic IMMEDIATELY — this is a medical emergency (NMS)","Reduce the antipsychotic dose and reassess in 24 hours"], ans:2, exp:"NEUROLEPTIC MALIGNANT SYNDROME (NMS): hyperthermia + lead-pipe rigidity + AMS + autonomic instability. This is a life-threatening emergency. STOP the antipsychotic immediately, provide supportive care, and transfer to ICU level care. Dantrolene may be used." },
+  { cat:"Antipsychotics", q:"A patient receiving clozapine has an ANC of 850 cells/μL. What is the MOST important nursing action?", opts:["Decrease the clozapine dose by half","Continue clozapine with more frequent ANC monitoring","Hold clozapine immediately and notify the provider","Administer G-CSF and continue clozapine"], ans:2, exp:"Clozapine must be STOPPED immediately if ANC falls below 1000 cells/μL (and reported to the REMS program). ANC <1000 indicates agranulocytosis — a potentially fatal adverse effect. The medication cannot be restarted without provider evaluation." },
+  { cat:"Antipsychotics", q:"Which atypical antipsychotic causes the GREATEST weight gain and highest risk of new-onset diabetes?", opts:["Aripiprazole","Quetiapine","Risperidone","Olanzapine"], ans:3, exp:"Olanzapine (Zyprexa) causes the greatest weight gain (average 4–15 kg) and highest metabolic syndrome risk including new-onset type 2 diabetes of all atypical antipsychotics. Aripiprazole has the lowest metabolic risk." },
+  { cat:"MAOIs", q:"A patient prescribed phenelzine asks which foods to avoid. Which response is MOST appropriate?", opts:["Avoid raw vegetables and citrus fruits","Avoid aged cheeses, cured meats, wine, soy sauce, and yeast extracts","Avoid dairy products and eggs","Avoid high-protein foods and red meat"], ans:1, exp:"Tyramine-rich foods cause a potentially FATAL hypertensive crisis with MAOIs. The key foods are aged/fermented cheeses, cured/smoked meats, red wines (especially Chianti), tap beer, soy sauce, miso, fava beans, and yeast extracts like Marmite." },
+  { cat:"MAOIs", q:"How long must a patient wait after stopping phenelzine before starting sertraline (Zoloft)?", opts:["48 hours","7 days","14 days","5 weeks"], ans:2, exp:"A 14-day washout is required after stopping ANY MAOI before starting a serotonergic drug. This allows MAO enzyme regeneration to occur, preventing serotonin syndrome. (Exception: fluoxetine requires 5 weeks FROM fluoxetine TO MAOI due to its long half-life.)" },
+  { cat:"SSRIs", q:"A patient taking sertraline asks why they don't feel better after 1 week. What is the BEST nurse response?", opts:["You may need a higher dose — I will contact the provider","This medication takes 2–4 weeks to begin working and 6–8 weeks for full effect — this is expected","This medication isn't working for you — we should switch medications","You should take an extra dose today to speed up the effects"], ans:1, exp:"SSRIs require 2–4 weeks before initial improvement is noticeable and 6–8 weeks for full therapeutic effect. Counseling patients about this timeline is critical to prevent premature discontinuation, which is one of the most common adherence issues." },
+  { cat:"SSRIs", q:"What is the PRIORITY assessment for a patient starting fluoxetine who is 22 years old?", opts:["Blood glucose level","Liver function tests","Suicidal ideation and behavioral changes","QTc interval on ECG"], ans:2, exp:"BLACK BOX WARNING: SSRIs carry increased risk of suicidal thinking and behavior in patients ≤24 years old. The priority assessment is suicidal ideation, especially in the first 4 weeks and after dose changes. Monitor closely and educate family/caregivers." },
+  { cat:"Benzodiazepines", q:"A patient taking lorazepam (Ativan) long-term is going to surgery and the team plans to hold all home medications. As the nurse, what is your PRIORITY concern?", opts:["Risk of intraoperative hypotension","Risk of withdrawal seizures from abrupt benzodiazepine discontinuation","Risk of anterograde amnesia","Risk of postoperative nausea"], ans:1, exp:"Abrupt benzodiazepine discontinuation in a physically dependent patient can cause life-threatening withdrawal seizures. Coordinate with the surgical and anesthesia team to ensure a proper taper plan is in place rather than abruptly holding the medication." },
+  { cat:"Benzodiazepines", q:"A patient is brought to the ED unresponsive after a suspected benzodiazepine overdose. What is the specific antidote?", opts:["Naloxone (Narcan)","Flumazenil (Romazicon)","N-acetylcysteine","Activated charcoal"], ans:1, exp:"Flumazenil (Romazicon) is the specific competitive benzodiazepine antagonist. However, it is SHORT-ACTING — re-sedation can occur as it wears off. It may also precipitate seizures in benzodiazepine-dependent patients. Supportive care is also essential." },
+  { cat:"Mood Stabilizers", q:"A patient on lamotrigine develops a red rash with blistering beginning on their trunk 3 weeks after starting. What is the PRIORITY nursing action?", opts:["Apply hydrocortisone cream and continue medication","Administer diphenhydramine and continue monitoring","STOP lamotrigine immediately and notify provider — this may be Stevens-Johnson Syndrome","Reduce the lamotrigine dose by half"], ans:2, exp:"ANY rash on lamotrigine must be evaluated immediately for Stevens-Johnson Syndrome (SJS). SJS is a potentially fatal mucocutaneous reaction. The medication must be STOPPED and provider notified. Do not restart without full evaluation and informed consent." },
+  { cat:"Mood Stabilizers", q:"Valproate is prescribed to a 28-year-old female with bipolar disorder. What is the MOST important teaching point?", opts:["Take the medication on an empty stomach for best absorption","Avoid grapefruit juice while taking this medication","Use highly effective contraception — valproate is teratogenic and causes neural tube defects","You may donate blood while taking this medication"], ans:2, exp:"Valproate is a Category X teratogen — it causes neural tube defects (spina bifida), craniofacial defects, and cognitive impairment in offspring. Highly effective contraception is mandatory for all women of childbearing age on valproate. This must be counseled before initiating." },
+  { cat:"TCAs", q:"Why is amitriptyline particularly dangerous in patients with suicidal ideation?", opts:["It causes cognitive impairment that increases impulsive behavior","TCAs are highly lethal in overdose — as few as 10–15 tablets can cause fatal cardiac arrhythmias","It causes severe akathisia that increases suicidal thoughts","It has a black box warning specifically about homicidal behavior"], ans:1, exp:"Tricyclic antidepressants are extremely cardiotoxic in overdose — even small amounts cause QRS prolongation, ventricular arrhythmias, heart block, and seizures. Prescribers should provide limited supplies (1-week dispense) to patients with suicidal ideation." },
+  { cat:"ADHD", q:"A parent asks why their child's cardiologist must be consulted before starting Adderall XR. What is the BEST explanation?", opts:["Amphetamines can cause liver damage","CNS stimulants can cause sudden death in children with underlying cardiac conditions","Amphetamines may interfere with the child's growth hormones","Stimulants cause QT prolongation in all children"], ans:1, exp:"CNS stimulants carry a risk of sudden death in patients with structural cardiac abnormalities or arrhythmias. Cardiac assessment including history, physical exam, and ECG when indicated is MANDATORY before initiating any stimulant. This is a black box warning for amphetamine salts." },
+  { cat:"ADHD", q:"Which ADHD medication is safest for a 16-year-old with a history of stimulant misuse and substance abuse?", opts:["Adderall XR (amphetamine salts)","Ritalin (methylphenidate)","Atomoxetine (Strattera)","Dexmethylphenidate (Focalin)"], ans:2, exp:"Atomoxetine (Strattera) is a non-stimulant, non-controlled substance with no abuse potential. It does not produce euphoria and is ideal for patients with substance use disorders. Note the BBW for suicidal ideation in adolescents." },
+  { cat:"Buspirone", q:"A patient asks, 'Can I take buspirone when I feel anxious, like I do with my alprazolam?' What is the most accurate response?", opts:["Yes, buspirone works similarly to alprazolam for acute anxiety","No — buspirone requires 1–2 weeks to begin working and must be taken every day, not as needed","Yes, but you should take a lower dose of buspirone than alprazolam","No, buspirone is only used for depression, not anxiety"], ans:1, exp:"Buspirone has a DELAYED onset of 1–2 weeks and requires consistent daily dosing to maintain therapeutic levels. It is not appropriate for as-needed (PRN) acute anxiety management. This must be clearly explained when transitioning patients from benzodiazepines." },
+  { cat:"Bupropion", q:"Which patient would be MOST appropriate to prescribe bupropion (Wellbutrin)?", opts:["A 24-year-old with major depression and a history of bulimia nervosa","A 45-year-old with MDD who is also trying to quit smoking","A 32-year-old with depression who recently stopped drinking alcohol 3 days ago","A 28-year-old with depression and a seizure disorder"], ans:1, exp:"Bupropion is appropriate for a patient with MDD trying to quit smoking (Zyban). It is CONTRAINDICATED in eating disorders (bulimia/anorexia), recent alcohol/benzo cessation, and seizure disorders due to seizure threshold lowering. The 45-year-old without these contraindications is the correct choice." }
+];
+
+let quizIdx = 0, quizScore = 0, quizAnswered = false, quizOrder = [];
+
+function shuffleArr(arr){ return [...arr].sort(()=>Math.random()-0.5); }
+
+function launchQuiz(){
+  quizIdx = 0; quizScore = 0; quizAnswered = false;
+  quizOrder = shuffleArr([...Array(QUIZ_QUESTIONS.length).keys()]);
+  document.getElementById('quizOverlay').classList.add('active');
+  renderQuestion();
+}
+function closeQuiz(){ document.getElementById('quizOverlay').classList.remove('active'); }
+
+function renderQuestion(){
+  if(quizIdx >= quizOrder.length){ showScore(); return; }
+  const q = QUIZ_QUESTIONS[quizOrder[quizIdx]];
+  const total = quizOrder.length;
+  document.getElementById('quizFill').style.width = ((quizIdx/total)*100)+'%';
+  const optsHTML = q.opts.map((o,i)=>`<button class="quiz-opt" onclick="answerQuiz(${i},this)">${o}</button>`).join('');
+  document.getElementById('quizContent').innerHTML = `
+    <div class="quiz-card">
+      <div class="q-num">Question ${quizIdx+1} of ${total}</div>
+      <div class="q-cat">${q.cat}</div>
+      <div class="question">${q.q}</div>
+      <div class="quiz-options">${optsHTML}</div>
+      <div class="quiz-explanation" id="quizExp">${q.exp}</div>
+    </div>
+    <button class="quiz-next" id="quizNext" onclick="nextQuestion()">Next Question →</button>`;
+}
+
+function answerQuiz(idx, btn){
+  if(quizAnswered) return;
+  quizAnswered = true;
+  const q = QUIZ_QUESTIONS[quizOrder[quizIdx]];
+  const opts = document.querySelectorAll('.quiz-opt');
+  opts.forEach(o=>o.disabled=true);
+  if(idx===q.ans){ btn.classList.add('correct'); quizScore++; }
+  else { btn.classList.add('wrong'); opts[q.ans].classList.add('reveal-correct'); }
+  document.getElementById('quizExp').classList.add('show');
+  document.getElementById('quizNext').classList.add('show');
+}
+
+function nextQuestion(){
+  quizIdx++; quizAnswered = false;
+  renderQuestion();
+}
+
+function showScore(){
+  const pct = Math.round((quizScore/quizOrder.length)*100);
+  let msg = pct>=90?'Excellent! NCLEX ready! 🎉':pct>=75?'Good work — review the questions you missed.':'Keep studying — focus on the categories you found difficult.';
+  document.getElementById('quizContent').innerHTML = `
+    <div class="quiz-score">
+      <div class="score-num">${quizScore} / ${quizOrder.length}</div>
+      <div style="font-size:2rem;margin:8px 0;">${pct}%</div>
+      <p>${msg}</p>
+      <button class="quiz-restart" onclick="launchQuiz()">Retake Quiz</button>
+      <button class="quiz-restart" style="background:var(--surface2);margin-left:10px;" onclick="closeQuiz()">Back to Reference</button>
+    </div>`;
+  document.getElementById('quizFill').style.width='100%';
+}
+
+// ══════════════════════════════════════════════
+//  INIT
+// ══════════════════════════════════════════════
+renderSections();
+updateProgress();
+</script>
+</body>
+</html>
